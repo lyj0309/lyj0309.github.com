@@ -18,4 +18,4 @@ go env -w GOPROXY=https://mirrors.cloud.tencent.com/go/
 
 go env -w GOPROXY=http://mirrors.tencentyun.com/go/
 export GOPROXY=http://mirrors.tencentyun.com/go/
-
+```
