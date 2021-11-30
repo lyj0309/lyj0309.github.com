@@ -1,7 +1,9 @@
 ---
 title: "超星刷课脚本安装"
 date: 2021-09-21T18:52:55+08:00
-draft: true
+tags: ["学习通"]
+categories: [ "life"]
+draft: false
 ---
 
 ### 一、浏览器选择

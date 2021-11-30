@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://lyj0309.gitee.io/sitemap.xml
+Sitemap: https://fakev.cn/sitemap.xml
