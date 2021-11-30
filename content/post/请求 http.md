@@ -3,6 +3,7 @@ title: "go请求http"
 date: 2021-10-21T18:52:55+08:00
 draft: true
 ---
+go提供了一个http包，可以通过这个包方便的进行http请求
 
 ```go
 import (
@@ -11,7 +12,7 @@ import (
     "net/http"
     "strings"
 )
- 
+	
 // http.Get
 func httpGet() {
 	    resp, err := http.Get("http://www.baidu.com")
