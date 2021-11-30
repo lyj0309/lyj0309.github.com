@@ -1,3 +1,4 @@
+go提供了一个http包，可以通过这个包方便的进行http请求
 
 ```go
 import (
@@ -6,7 +7,7 @@ import (
     "net/http"
     "strings"
 )
- 
+	
 // http.Get
 func httpGet() {
 	    resp, err := http.Get("http://www.baidu.com")

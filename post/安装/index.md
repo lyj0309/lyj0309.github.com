@@ -1,5 +1,5 @@
 
-```
+```sh
 GOVER=1.17.2
 
 wget golang.google.cn/dl/go${GOVER}.linux-amd64.tar.gz

@@ -16,24 +16,24 @@
 </span><span class=lnt>16
 </span><span class=lnt>17
 </span><span class=lnt>18
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>GOVER=1.17.2
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-sh data-lang=sh><span class=nv>GOVER</span><span class=o>=</span>1.17.2
 
-wget golang.google.cn/dl/go${GOVER}.linux-amd64.tar.gz
+wget golang.google.cn/dl/go<span class=si>${</span><span class=nv>GOVER</span><span class=si>}</span>.linux-amd64.tar.gz
 
 
-tar -xzf  go${GOVER}.linux-amd64.tar.gz
+tar -xzf  go<span class=si>${</span><span class=nv>GOVER</span><span class=si>}</span>.linux-amd64.tar.gz
 
 mv ./go /usr/local/go
 
-echo &#34;export PATH=$PATH:/usr/local/go/bin&#34; &gt;&gt; /etc/profile
+<span class=nb>echo</span> <span class=s2>&#34;export PATH=</span><span class=nv>$PATH</span><span class=s2>:/usr/local/go/bin&#34;</span> &gt;&gt; /etc/profile
 
-source /etc/profile
-rm golang.google.cn/dl/go${GOVER}.linux-amd64.tar.gz
+<span class=nb>source</span> /etc/profile
+rm golang.google.cn/dl/go<span class=si>${</span><span class=nv>GOVER</span><span class=si>}</span>.linux-amd64.tar.gz
 
-go env -w GOPROXY=https://mirrors.cloud.tencent.com/go/
+go env -w <span class=nv>GOPROXY</span><span class=o>=</span>https://mirrors.cloud.tencent.com/go/
 
-go env -w GOPROXY=http://mirrors.tencentyun.com/go/
-export GOPROXY=http://mirrors.tencentyun.com/go/
+go env -w <span class=nv>GOPROXY</span><span class=o>=</span>http://mirrors.tencentyun.com/go/
+<span class=nb>export</span> <span class=nv>GOPROXY</span><span class=o>=</span>http://mirrors.tencentyun.com/go/
 </code></pre></td></tr></table></div></div></div><div class=post-copyright><p class=copyright-item><span class=item-title>文章作者</span>
 <span class=item-content>lyj</span></p><p class=copyright-item><span class=item-title>上次更新</span>
 <span class=item-content>2021-10-21</span></p></div><footer class=post-footer><div class=post-tags><a href=/tags/go/>Go</a>
