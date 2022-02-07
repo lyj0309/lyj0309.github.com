@@ -3,6 +3,76 @@
   
   <url>
     <loc>https://fakev.cn/</loc>
+    <lastmod>2022-02-07T17:54:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/post/devops/mysql%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD/</loc>
+    <lastmod>2022-02-07T17:54:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/post/</loc>
+    <lastmod>2022-02-07T17:54:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/post/devops/docker/</loc>
+    <lastmod>2022-02-07T17:52:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/about/</loc>
+    <lastmod>2022-02-07T17:45:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/tags/cloud/</loc>
+    <lastmod>2022-02-07T15:06:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/post/cloud/fly/</loc>
+    <lastmod>2022-02-07T15:06:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/tags/paas/</loc>
+    <lastmod>2022-02-07T15:06:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/tags/</loc>
+    <lastmod>2022-02-07T15:06:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/tags/%E7%99%BD%E5%AB%96/</loc>
+    <lastmod>2022-02-07T15:06:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/post/elastic/filebeat/</loc>
     <lastmod>2021-10-21T18:52:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -16,28 +86,21 @@
   </url>
   
   <url>
-    <loc>https://fakev.cn/post/%E5%AE%89%E8%A3%85/</loc>
+    <loc>https://fakev.cn/post/go/%E5%AE%89%E8%A3%85/</loc>
     <lastmod>2021-10-21T18:52:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://fakev.cn/post/%E8%AF%B7%E6%B1%82-http/</loc>
+    <loc>https://fakev.cn/post/go/%E8%AF%B7%E6%B1%82-http/</loc>
     <lastmod>2021-10-21T18:52:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://fakev.cn/post/</loc>
-    <lastmod>2021-10-21T18:52:55+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://fakev.cn/tags/</loc>
+    <loc>https://fakev.cn/post/elastic/metricbeat/</loc>
     <lastmod>2021-10-21T18:52:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -114,7 +177,14 @@
   </url>
   
   <url>
-    <loc>https://fakev.cn/post/my-first-post/</loc>
+    <loc>https://fakev.cn/post/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E6%89%8B%E6%9C%BA%E7%89%88/</loc>
+    <lastmod>2021-09-21T18:52:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://fakev.cn/post/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E7%94%B5%E8%84%91%E7%89%88/</loc>
     <lastmod>2021-09-21T18:52:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

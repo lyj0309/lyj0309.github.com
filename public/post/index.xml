@@ -6,23 +6,68 @@
     <description>Recent content in Posts on FAKEV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 21 Oct 2021 18:52:55 +0800</lastBuildDate><atom:link href="https://fakev.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Feb 2022 17:54:20 +0800</lastBuildDate><atom:link href="https://fakev.cn/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>go安装</title>
-      <link>https://fakev.cn/post/%E5%AE%89%E8%A3%85/</link>
+      <title>Mysql自动备份</title>
+      <link>https://fakev.cn/post/devops/mysql%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD/</link>
+      <pubDate>Mon, 07 Feb 2022 17:54:20 +0800</pubDate>
+      
+      <guid>https://fakev.cn/post/devops/mysql%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD/</guid>
+      <description>有时候，ddos或者各种攻击会导致服务瘫痪，或者当前服务器进入流量黑洞，无法访问，或者管理员手欠不小心删了一些数据，这时候，数据库的备份就显</description>
+    </item>
+    
+    <item>
+      <title>docker&amp;compose安装</title>
+      <link>https://fakev.cn/post/devops/docker/</link>
+      <pubDate>Mon, 07 Feb 2022 17:52:28 +0800</pubDate>
+      
+      <guid>https://fakev.cn/post/devops/docker/</guid>
+      <description>docker安装 1 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun 换源 1 2 3 4 5 6 7 8 9 10 cat &amp;gt; /etc/docker/daemon.json &amp;lt;&amp;lt;eof { &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://jrromknz.mirror.aliyuncs.com&amp;#34;], &amp;#34;exec-opts&amp;#34;:[&amp;#34;native.cgroupdriver=systemd&amp;#34;] } eof systemctl enable docker.service systemctl daemon-reload systemctl restart docker.service compose安装(x86) 1 2 3 4 5 6 7 8</description>
+    </item>
+    
+    <item>
+      <title>Fly.io 免费PaaS平台，以及哪吒面板的部署</title>
+      <link>https://fakev.cn/post/cloud/fly/</link>
+      <pubDate>Mon, 07 Feb 2022 15:06:48 +0800</pubDate>
+      
+      <guid>https://fakev.cn/post/cloud/fly/</guid>
+      <description>fly.io 类似于Okteto、Heroku和Railway的PaaS平台。 只能通过CLI登录，对小白可能有些不太友好。 官网：fly.io 免费额度：F</description>
+    </item>
+    
+    <item>
+      <title>filebeat</title>
+      <link>https://fakev.cn/post/elastic/filebeat/</link>
       <pubDate>Thu, 21 Oct 2021 18:52:55 +0800</pubDate>
       
-      <guid>https://fakev.cn/post/%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://fakev.cn/post/elastic/filebeat/</guid>
+      <description>安装 1 2 3 4 5 6 7 #deb curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.15.2-amd64.deb sudo dpkg -i filebeat-7.15.2-amd64.deb #rpm curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.15.2-x86_64.rpm sudo rpm -vi filebeat-7.15.2-x86_64.rpm 设置 路径： /var/filebeat/filebeat.yml 1 2 3 4 5 6 7 8 9 10 output.elasticsearch:hosts:[&amp;#34;myEShost:9200&amp;#34;]username:&amp;#34;filebeat_internal&amp;#34;password:&amp;#34;YOUR_PASSWORD&amp;#34;setup.kibana:host:&amp;#34;mykibanahost:5601&amp;#34;username:&amp;#34;my_kibana_user&amp;#34;password:&amp;#34;{pwd}&amp;#34; 模块配置 可用模块 filebeat modules list 开启模块 filebeat modules enable system nginx mysql 模块设置路</description>
+    </item>
+    
+    <item>
+      <title>go安装</title>
+      <link>https://fakev.cn/post/go/%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Thu, 21 Oct 2021 18:52:55 +0800</pubDate>
+      
+      <guid>https://fakev.cn/post/go/%E5%AE%89%E8%A3%85/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 GOVER=1.17.2 wget golang.google.cn/dl/go${GOVER}.linux-amd64.tar.gz tar -xzf go${GOVER}.linux-amd64.tar.gz mv ./go /usr/local/go echo &amp;#34;export PATH=$PATH:/usr/local/go/bin&amp;#34; &amp;gt;&amp;gt; /etc/profile source /etc/profile rm golang.google.cn/dl/go${GOVER}.linux-amd64.tar.gz go env -w GOPROXY=https://mirrors.cloud.tencent.com/go/ go env -w GOPROXY=http://mirrors.tencentyun.com/go/ export GOPROXY=http://mirrors.tencentyun.com/go/</description>
     </item>
     
     <item>
       <title>go请求http</title>
-      <link>https://fakev.cn/post/%E8%AF%B7%E6%B1%82-http/</link>
+      <link>https://fakev.cn/post/go/%E8%AF%B7%E6%B1%82-http/</link>
       <pubDate>Thu, 21 Oct 2021 18:52:55 +0800</pubDate>
       
-      <guid>https://fakev.cn/post/%E8%AF%B7%E6%B1%82-http/</guid>
-      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 import ( &amp;#34;fmt&amp;#34; &amp;#34;io/ioutil&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;strings&amp;#34; ) // http.Get func httpGet() { resp, err := http.Get(&amp;#34;http://www.baidu.com&amp;#34;) if</description>
+      <guid>https://fakev.cn/post/go/%E8%AF%B7%E6%B1%82-http/</guid>
+      <description>go提供了一个http包，可以通过这个包方便的进行http请求 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39</description>
+    </item>
+    
+    <item>
+      <title>mtricbaet</title>
+      <link>https://fakev.cn/post/elastic/metricbeat/</link>
+      <pubDate>Thu, 21 Oct 2021 18:52:55 +0800</pubDate>
+      
+      <guid>https://fakev.cn/post/elastic/metricbeat/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -53,11 +98,20 @@
     </item>
     
     <item>
-      <title>超星刷课脚本安装</title>
-      <link>https://fakev.cn/post/my-first-post/</link>
+      <title>学习通脚本安装（手机版）</title>
+      <link>https://fakev.cn/post/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E6%89%8B%E6%9C%BA%E7%89%88/</link>
       <pubDate>Tue, 21 Sep 2021 18:52:55 +0800</pubDate>
       
-      <guid>https://fakev.cn/post/my-first-post/</guid>
+      <guid>https://fakev.cn/post/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E6%89%8B%E6%9C%BA%E7%89%88/</guid>
+      <description>1.安装浏览器 点击下载 下载完成后安装 2.安装油猴 打开浏览器，跟图走 3.安装脚本 在此浏览器内打开 http://script.2333.pub 点击安装脚本 4.检查安装 打开 http://chaoxing.com 登录 打开一个课</description>
+    </item>
+    
+    <item>
+      <title>学习通脚本安装（电脑版）</title>
+      <link>https://fakev.cn/post/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E7%94%B5%E8%84%91%E7%89%88/</link>
+      <pubDate>Tue, 21 Sep 2021 18:52:55 +0800</pubDate>
+      
+      <guid>https://fakev.cn/post/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E7%94%B5%E8%84%91%E7%89%88/</guid>
       <description>一、浏览器选择 推荐使用edge，如果是chrome要科网 二、安装油猴 打开 https://microsoftedge.microsoft.co</description>
     </item>
     

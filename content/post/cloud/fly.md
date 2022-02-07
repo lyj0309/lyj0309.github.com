@@ -120,7 +120,7 @@ processes = []
 
 6. 运行`fly deploy`部署app，他会自动把你代码打包成docker镜像上传
 7. 大功告成，接下来你就可以去控制台看部署的结果了
-8. 演示站 nz.fakev.cn
+8. [演示站](http://nz.fakev.cn)
 
 
 
