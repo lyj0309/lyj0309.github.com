@@ -1,0 +1,61 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>docker&compose安装 - FAKEV</title><meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><script data-ad-client=ca-pub-5481706144401224 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><meta name=author content="lyj"><meta name=description content="docker-compose我认为是单机管理容器的最佳方案，如果要多机 docker安装 1 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun 换源 1 2 3 4 5 6 7 8 9 10 cat &amp;gt; /etc/docker/daemon.json &amp;lt;&amp;lt;eof {"><meta name=keywords content="IT,fake"><meta name=generator content="Hugo 0.85.0 with theme even"><link rel=canonical href=https://fakev.cn/post/devops/docker/><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link href=/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin=anonymous><meta property="og:title" content="docker&compose安装"><meta property="og:description" content="docker-compose我认为是单机管理容器的最佳方案，如果要多机 docker安装 1 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun 换源 1 2 3 4 5 6 7 8 9 10 cat > /etc/docker/daemon.json <<eof {"><meta property="og:type" content="article"><meta property="og:url" content="https://fakev.cn/post/devops/docker/"><meta property="article:section" content="post"><meta property="article:published_time" content="2022-02-07T17:52:28+08:00"><meta property="article:modified_time" content="2022-02-07T17:52:28+08:00"><meta itemprop=name content="docker&compose安装"><meta itemprop=description content="docker-compose我认为是单机管理容器的最佳方案，如果要多机 docker安装 1 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun 换源 1 2 3 4 5 6 7 8 9 10 cat > /etc/docker/daemon.json <<eof {"><meta itemprop=datePublished content="2022-02-07T17:52:28+08:00"><meta itemprop=dateModified content="2022-02-07T17:52:28+08:00"><meta itemprop=wordCount content="145"><meta itemprop=keywords content="devops,"><meta name=twitter:card content="summary"><meta name=twitter:title content="docker&compose安装"><meta name=twitter:description content="docker-compose我认为是单机管理容器的最佳方案，如果要多机 docker安装 1 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun 换源 1 2 3 4 5 6 7 8 9 10 cat > /etc/docker/daemon.json <<eof {"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script><script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>FAKEV</a></div><div class=mobile-navbar-icon><span></span><span></span><span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><a href=/><li class=mobile-menu-item>主页</li></a><a href=/post/><li class=mobile-menu-item>历史</li></a><a href=/tags/><li class=mobile-menu-item>标签</li></a><a href=/categories/><li class=mobile-menu-item>分类</li></a></ul></nav><div class=container id=mobile-panel><header id=header class=header><div class=logo-wrapper><a href=/ class=logo>FAKEV</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=/>主页</a></li><li class=menu-item><a class=menu-item-link href=/post/>历史</a></li><li class=menu-item><a class=menu-item-link href=/tags/>标签</a></li><li class=menu-item><a class=menu-item-link href=/categories/>分类</a></li></ul></nav></header><main id=main class=main><div class=content-wrapper><div id=content class=content><article class=post><header class=post-header><h1 class=post-title>docker&compose安装</h1><div class=post-meta><span class=post-time>2022-02-07</span></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>文章目录</h2><div class="post-toc-content always-active"><nav id=TableOfContents><ul><li><ul><li><a href=#docker安装>docker安装</a></li><li><a href=#换源>换源</a></li><li><a href=#compose安装x86>compose安装(x86)</a></li><li><a href=#compose-arm-版本>compose arm 版本</a></li></ul></li></ul></nav></div></div><div class=post-content><p>docker-compose我认为是单机管理容器的最佳方案，如果要多机</p><h2 id=docker安装>docker安装</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+</code></pre></td></tr></table></div></div><h2 id=换源>换源</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-sh data-lang=sh>cat &gt; /etc/docker/daemon.json <span class=s>&lt;&lt;eof
+</span><span class=s>{
+</span><span class=s>&#34;registry-mirrors&#34;: [&#34;https://jrromknz.mirror.aliyuncs.com&#34;],
+</span><span class=s>&#34;exec-opts&#34;:[&#34;native.cgroupdriver=systemd&#34;]
+</span><span class=s>}
+</span><span class=s>eof</span>
+systemctl <span class=nb>enable</span> docker.service
+systemctl daemon-reload
+
+systemctl restart docker.service
+</code></pre></td></tr></table></div></div><h2 id=compose安装x86>compose安装(x86)</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-fallback data-lang=fallback>curl -L &#34;https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-$(uname -s)-$(uname -m)&#34; -o /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+
+# 加速版
+curl -L &#34;https://hub.fastgit.xyz/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)&#34; -o /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+
+</code></pre></td></tr></table></div></div><h2 id=compose-arm-版本>compose arm 版本</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-sh data-lang=sh>wget https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-armv7
+mv ./docker-compose-linux-armv7 /usr/local/bin/docker-compose
+chmod +x  /usr/local/bin/docker-compose
+</code></pre></td></tr></table></div></div></div><div class=post-copyright><p class=copyright-item><span class=item-title>文章作者</span>
+<span class=item-content>lyj</span></p><p class=copyright-item><span class=item-title>上次更新</span>
+<span class=item-content>2022-02-07</span></p></div><footer class=post-footer><div class=post-tags><a href=/tags/devops/>devops</a></div><nav class=post-nav><a class=prev href=/post/devops/mysql%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD/><i class="iconfont icon-left"></i>
+<span class="prev-text nav-default">Mysql自动备份</span>
+<span class="prev-text nav-mobile">上一篇</span></a>
+<a class=next href=/post/cloud/fly/><span class="next-text nav-default">Fly.io 免费PaaS平台，以及哪吒面板的部署</span>
+<span class="next-text nav-mobile">下一篇</span>
+<i class="iconfont icon-right"></i></a></nav></footer></article></div><div id=vcomments></div><script src=//cdn1.lncld.net/static/js/3.0.4/av-min.js></script><script src=//unpkg.com/valine/dist/Valine.min.js></script><script type=text/javascript>new Valine({el:'#vcomments',appId:'xp0QpOaiSAHWtssGMmuQsDK2-gzGzoHsz',appKey:'0jJ0r2V5ATEHonjSfXoY4Swn',notify:!1,verify:!1,avatar:'mm',placeholder:'说点什么吧...',visitor:!1})</script></div></main><footer id=footer class=footer><div class=social-links><a href=lyj@nogg.cn class="iconfont icon-email" title=email></a><a href=https://github.com/lyj0309 class="iconfont icon-github" title=github></a><a href=https://www.zhihu.com/people/liang-yan-jun-72 class="iconfont icon-zhihu" title=zhihu></a><a href=https://space.bilibili.com/396363658 class="iconfont icon-bilibili" title=bilibili></a><a href=https://fakev.cn/index.xml type=application/rss+xml class="iconfont icon-rss" title=rss></a></div><div class=copyright><span class=power-by>由 <a class=hexo-link href=https://gohugo.io>Hugo</a> 强力驱动</span>
+<span class=division>|</span>
+<span class=theme-info>主题 -
+<a class=theme-link href=https://github.com/olOwOlo/hugo-theme-even>Even</a></span>
+<span class=copyright-year>&copy;
+2021 -
+2022<span class=heart><i class="iconfont icon-heart"></i></span><span>lyj</span></span>
+<span><a class=theme-link href=https://beian.miit.gov.cn>桂ICP备20003848号</a></span></div></footer><div class=back-to-top id=back-to-top><i class="iconfont icon-up"></i></div></div><script src=https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin=anonymous></script><script>var languageCode="zh-cn".replace(/-/g,'_').replace(/_(.*)/,function(b,a){return b.replace(a,a.toUpperCase())});timeago().render(document.querySelectorAll('.timeago'),languageCode),timeago.cancel()</script><script type=text/javascript src=/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js></script></body></html>
