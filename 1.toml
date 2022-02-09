@@ -1,7 +1,7 @@
 baseURL = "https://fakev.cn/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "FAKEV"
+title = ":kissing_heart:FA1KEV"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true

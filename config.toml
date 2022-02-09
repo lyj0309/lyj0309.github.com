@@ -6,11 +6,9 @@ languageCode = "zh-CN"
 # 是否包括中日韩文字
 hasCJKLanguage = true
 # 网站标题
-title = "FAKEV"
+title = 'FAKEV'
 
 
-enableGitInfo = true
-gitRepo = "https://github.com/lyj0309"
 
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
@@ -32,7 +30,9 @@ theme = "LoveIt"
   # 网站默认主题样式 ("light", "dark", "auto")
   defaultTheme = "auto"
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = ""
+  enableGitInfo = true
+  gitRepo = "https://github.com/lyj0309/lyj0309.github.com"
+
   #  哪种哈希函数用来 SRI, 为空时表示不使用 SRI
   # ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
@@ -55,7 +55,7 @@ theme = "LoveIt"
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
       title = ""
       # 主页显示的网站副标题
-      subtitle = "技术博客分享"
+      subtitle = "mjj日常"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
@@ -319,7 +319,15 @@ theme = "LoveIt"
     url = "/categories/"
     title = ""
     weight = 3
-
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "关于"
+    url = "/about/"
+    title = ""
+    weight = 5
+    
 # Hugo 解析文档的配置
 [markup]
   # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
