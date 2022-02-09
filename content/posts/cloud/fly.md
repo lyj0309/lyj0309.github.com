@@ -1,7 +1,6 @@
 ---
 title: "Fly.io 免费PaaS平台，以及哪吒面板的部署"
 date: 2022-02-07T15:06:48+08:00
-draft: true
 tags: ["白嫖","cloud","PaaS"]
 ---
 

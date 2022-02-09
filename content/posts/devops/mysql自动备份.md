@@ -1,7 +1,6 @@
 ---
 title: "Mysql自动备份"
 date: 2022-02-07T17:54:20+08:00
-draft: true
 tags: ["devops"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "甲骨文云自动刷arm(使用railway.app)"
 date: 2022-02-07T18:35:01+08:00
-draft: true
 tags: ["白嫖","cloud"]
 ---
 

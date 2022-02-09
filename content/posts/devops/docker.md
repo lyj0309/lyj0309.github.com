@@ -1,7 +1,6 @@
 ---
 title: "docker&compose安装"
 date: 2022-02-07T17:52:28+08:00
-draft: true
 tags: ["devops"]
 ---
 docker-compose我认为是单机管理容器的最佳方案，如果要多机

@@ -2,7 +2,6 @@
 title: "gitmodules详解（Git子模块配置）"
 date: 2021-09-21T18:52:55+08:00
 tags: ["git","code"]
-draft: true
 ---
 
 ## 一、gitmodules是什么

@@ -1,7 +1,6 @@
 ---
 title: "wireguard安装"
 date: 2021-10-21T18:52:55+08:00
-draft: true
 ---
 
 ### 基本原理和配置
