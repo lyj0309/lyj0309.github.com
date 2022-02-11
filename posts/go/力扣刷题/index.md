@@ -1,0 +1,256 @@
+# 力扣刷题
+
+
+```go  
+
+//459. 重复的子字符串
+func repeatedSubstringPattern(s string) bool {
+	l := len(s)
+	for i := 1; i <= l/2; i++ {
+		if l%i == 0 {
+			subs := s[:i]
+			t := true
+			for k := 0; k < l/i; k++ {
+				if s[k*i:k*i+i] != subs {
+					t = false
+					break
+				}
+			}
+			if t {
+				return true
+			}
+		}
+	}
+	return false
+}
+
+//1447. 最简分数
+func simplifiedFractions(n int) (res []string) {
+	for i := 1; i < n; i++ {
+		for k := n; k > 1; k-- {
+			if i >= k {
+				break
+			}
+			//判断化简
+			for f := 2; f <= i; f++ {
+				if i%f == 0 && k%f == 0 {
+					goto this
+				}
+			}
+			res = append(res, strconv.Itoa(i)+"/"+strconv.Itoa(k))
+		this:
+		}
+	}
+	return
+}
+
+//268. 丢失的数字
+func missingNumber(nums []int) int {
+	arr := make([]bool, len(nums))
+	for _, num := range nums {
+		arr[num] = true
+	}
+	for i, b := range arr {
+		if b == false {
+			return i
+		}
+	}
+	return 0
+}
+
+
+//258. 各位相加
+func addDigits(num int) int {
+	for {
+		arr := getBit(num)
+		num = 0
+		for _, i := range arr {
+			num += i
+		}
+		if num < 10 {
+			return num
+		}
+	}
+}
+
+//242. 有效的字母异位词
+func isAnagram(s string, t string) bool {
+	m := map[int32]int{}
+	for _, i := range s {
+		m[i]++
+	}
+	for _, i := range t {
+		m[i]--
+	}
+	for _, i := range m {
+		if i != 0 {
+			return false
+		}
+	}
+	return true
+}
+
+//228. 汇总区间
+func summaryRanges(nums []int) (res []string) {
+	if len(nums) == 0 {
+		return
+	}
+	k := 0
+	for i := 0; i < len(nums)-1; i++ {
+		if nums[i+1]-nums[i] != 1 {
+			//生成单个
+			r := strconv.Itoa(nums[i])
+			if k != i {
+				r = strconv.Itoa(nums[k]) + "->" + r
+			}
+
+			res = append(res, r)
+			k = i + 1
+		}
+	}
+	if k == len(nums)-1 {
+		res = append(res, strconv.Itoa(nums[len(nums)-1]))
+	} else {
+		res = append(res, strconv.Itoa(nums[k])+"->"+strconv.Itoa(nums[len(nums)-1]))
+	}
+	return
+}
+
+type MyStack struct {
+	arr []int
+}
+
+//225. 用队列实现栈
+func Constructor() MyStack {
+	return MyStack{}
+}
+
+func (s *MyStack) Push(x int) {
+	s.arr = append(s.arr, x)
+}
+
+func (s *MyStack) Pop() int {
+	a := s.arr[len(s.arr)]
+	s.arr = s.arr[:len(s.arr)-1]
+	return a
+}
+
+func (s *MyStack) Top() int {
+	return s.arr[len(s.arr)]
+}
+
+func (s *MyStack) Empty() bool {
+	return len(s.arr) == 0
+}
+
+//219. 存在重复元素 II
+func containsNearbyDuplicate(nums []int, k int) bool {
+	m := make(map[int]int)
+	for i, num := range nums {
+		if i-m[num] <= k && m[num] != 0 {
+			return true
+		}
+		m[num] = i
+	}
+	return false
+}
+
+func myPow(x float64, n int) float64 {
+	return math.Pow(x, float64(n))
+}
+
+func majorityElement(nums []int) int {
+	m := make(map[int]int)
+	for _, num := range nums {
+		m[num]++
+		if m[num] > (len(nums) / 2) {
+			return num
+		}
+	}
+	return 0
+}
+
+//168. Excel表列名称
+func convertToTitle(columnNumber int) string {
+	ans := []byte{}
+	for columnNumber > 0 {
+		a0 := (columnNumber-1)%26 + 1
+		ans = append(ans, 'A'+byte(a0-1))
+		columnNumber = (columnNumber - a0) / 26
+	}
+	for i, n := 0, len(ans); i < n/2; i++ {
+		ans[i], ans[n-1-i] = ans[n-1-i], ans[i]
+	}
+	return string(ans)
+}
+
+//1996. 游戏中弱角色的数量
+func numberOfWeakCharacters(properties [][]int) (ans int) {
+	sort.Slice(properties, func(i, j int) bool {
+		p, q := properties[i], properties[j]
+		return p[0] < q[0] || p[0] == q[0] && p[1] > q[1]
+	})
+	var st []int
+	for _, p := range properties {
+		for len(st) > 0 && st[len(st)-1] < p[1] {
+			st = st[:len(st)-1]
+			ans++
+		}
+		st = append(st, p[1])
+	}
+	return
+}
+
+//171. Excel 表列序号
+func titleToNumber(columnTitle string) (res int) {
+
+	l := len(columnTitle)
+	k := 1
+	for i := l; i > 0; i-- {
+		res += int(columnTitle[i-1]-64) * k
+		k *= 26
+	}
+
+	return
+}
+
+//202. 快乐数
+func isHappy(n int) bool {
+	m := make(map[int]bool)
+	for {
+		arr := getBit(n)
+		n = 0
+		for _, i := range arr {
+			n += i * i
+		}
+
+		if m[n] == true {
+			return false
+		}
+		m[n] = true
+
+		if n <= 3 {
+			if n == 1 {
+				return true
+			} else {
+				return false
+			}
+		}
+	}
+}
+
+//217. 存在重复元素
+func containsDuplicate(nums []int) bool {
+	if len(nums) > 0 {
+		for k, v := range nums {
+			for _, vv := range nums[k+1:] {
+				if v == vv {
+					return true
+				}
+			}
+		}
+	}
+	return false
+}
+
+```
