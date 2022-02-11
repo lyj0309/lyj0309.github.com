@@ -12,17 +12,17 @@
 
 打开浏览器，跟图走
 
-![image.png](http://tva1.sinaimg.cn/large/0077qBLuly1gwccfp5hatj30ee0uoacx.jpg)
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1gwccfp5hatj30ee0uoacx.jpg)
 
-![image.png](http://tva1.sinaimg.cn/large/0077qBLuly1gwccgjue6nj30ee0u7n1b.jpg)
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1gwccgjue6nj30ee0u7n1b.jpg)
 
-![image.png](http://tva1.sinaimg.cn/large/0077qBLuly1gwcchvi9nxj30ee0upwkr.jpg)
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1gwcchvi9nxj30ee0upwkr.jpg)
 
 ## 3.安装脚本
 
 在此浏览器内打开
 
-http://script.2333.pub
+http://ti.fakev.cn/scripts
 
 点击安装脚本
 
@@ -36,4 +36,4 @@ http://chaoxing.com
 
 打开一个课程，如果出现查题面板即安装成功
 
-![image.png](http://tva1.sinaimg.cn/large/0077qBLuly1gwccr9l9sxj30ee0vmad9.jpg)
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1gwccr9l9sxj30ee0vmad9.jpg)
