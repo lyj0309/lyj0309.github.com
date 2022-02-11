@@ -128,8 +128,8 @@ theme = "LoveIt"
 
   # 作者的社交信息设置
   [params.social]
-    GitHub = "https://github.com/lyj0309"
-    Zhihu = "https://www.zhihu.com/people/liang-yan-jun-72"
+    GitHub = "lyj0309"
+    Zhihu = "liang-yan-jun-72"
     RSS = true # 
 
   #  文章页面配置
