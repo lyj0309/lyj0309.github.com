@@ -2,7 +2,6 @@
 title: "webApi fetch使用"
 date: 2021-10-21T18:52:55+08:00
 tags: ["前端"]
-draft: true
 ---
 ## 概述
 fetch()的功能与 XMLHttpRequest 基本相同，但有三个主要的差异。
