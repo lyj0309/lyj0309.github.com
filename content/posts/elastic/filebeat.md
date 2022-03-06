@@ -1,7 +1,7 @@
 ---
 title: "filebeat"
 date: 2021-10-21T18:52:55+08:00
-tags: ["devops"]
+tags: ["devops","elastic"]
 ---
 
 ## 安装
