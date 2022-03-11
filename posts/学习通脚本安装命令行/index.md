@@ -1,0 +1,27 @@
+# 学习通脚本安装（命令行）
+
+
+
+## 前言
+最近超星改网页改的厉害，导致很多网页脚本无法运行
+遂使用命令行，绕过网页直接刷
+
+## 刷前提醒
+开倍数，使用脚本有风险，出现的结果本人一概不负责
+
+脚本仅供学习使用
+
+
+## 快速使用
+
+[点这里](https://fakev.lanzouv.com/iVwDJ01bpwlg)下载exe文件，打开，输入账号密码即可开始
+
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1h064bey4uvj30nx0gi7an.jpg)
+
+
+
+## 参考
+<https://github.com/lyj0309/chaoxing-xuexitong-autoflush>
+
+
+

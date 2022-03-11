@@ -66,7 +66,6 @@ export GO_VERSION=1.17.6
 
 ```sh
 cd /var
-sudo mkdir swap
 sudo dd if=/dev/zero of=swapfile bs=1024 count=2000000
 
 chmod 0600 swapfile 
@@ -75,13 +74,16 @@ sudo mkswap swapfile
 #挂载： 
 sudo swapon /var/swapfile
 #卸载：
-#sudo swapoff /var/swapfile
+# sudo swapoff /var/swapfile
 ```
 
 开机自己挂载
 开机自动挂载SWAP分区，
-
 编辑   /etc/fstab，末行添加：
-在文件中增加：
 
-`/var/swapfile   swap  swap  defaults  0  0`
+```sh
+cat << EOF > /etc/fstab
+/var/swapfile   swap  swap  defaults  0  0
+EOF
+```
+
