@@ -16,6 +16,11 @@ ps: 都有免费额度,azure我用的是外币卡注册的，应该学生账号�
 | serverless |  Azure Functions| 有 | 无|
 |最大应用大小| 250mb | 15,000个文件 | 无|
 
+vercel
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1h09k0uff9fj30qe0bbtcz.jpg)
+azure
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1h09k1xf1l6j30pt0b60x0.jpg)
+firebase
 综上，除了地区和速度之外，其他的也差不多，而且，香港的一般也不会阻断，所以我选择azure
 
 ## 安装hugo和生成与写博客
