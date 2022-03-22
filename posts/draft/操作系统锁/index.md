@@ -1,0 +1,36 @@
+# 操作系统锁
+
+
+## 死锁的概念
+
+死锁（Deadlock）：是指两个或两个以上的进程在执行过程中，因争夺资源而造成的一种互相等待的现象，若无外力作用，它们都将无法推进下去。称此时系统处于死锁状态或系统产生了死锁。
+称这些永远在互相等待的进程为死锁进程。
+所占用的资源或者需要它们进行某种合作的其它进程就会相继陷入死锁，最终可能导致整个系统处于瘫痪状态。
+
+
+## 死锁产生的条件
+
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1h0ec9rwm1wj30n70b2drr.jpg)
+
++ 互斥条件
+
++ 不可剥夺条件
+
++ 占有并请求条件
+
++ 循环等待条件
+
+## 死锁的破坏
+
+
+### 破坏互斥条件
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1h0ecgu9xu9j30kk09zgsl.jpg)
+### 破坏不可剥夺条件
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1h0ech9aj1sj30kk093q9u.jpg)
+### 破环占有并请求条件
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1h0echvv5b2j30kk09tgrd.jpg)
+### 破坏循环等待条件
+![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1h0ecj11m81j30kk09utg2.jpg)
+
+
+> ref <https://www.cnblogs.com/wkfvawl/p/11598647.html>
