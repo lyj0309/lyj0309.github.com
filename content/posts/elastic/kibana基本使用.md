@@ -1,7 +1,7 @@
 ---
-title: "Kibana基本使用"
+title: "Kibana改中文"
 date: 2022-02-18T02:17:19+08:00
-draft: true
+tags: ["elastic"]
 ---
 
 在 `kibana.yml`配置文件中加一行

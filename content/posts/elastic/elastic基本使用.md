@@ -1,7 +1,6 @@
 ---
 title: "Elasticsearch8.0基本使用"
 date: 2022-02-18T02:07:57+08:00
-draft: true
 tags: ["elastic"]
 ---
 
