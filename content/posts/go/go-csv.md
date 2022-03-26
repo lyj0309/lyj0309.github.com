@@ -1,7 +1,7 @@
 ---
 title: "Go Csv"
 date: 2022-03-02T11:54:31+08:00
-draft: true
+tags: ["Go"]
 ---
 
 go提供了一个读取库encoding

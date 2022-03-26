@@ -88,3 +88,23 @@ cat << EOF > /etc/fstab
 /var/swapfile   swap  swap  defaults  0  0
 EOF
 ```
+
+
+## 压缩
+### zip
+将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：
+`zip -q -r html.zip /home/html`
+
+`zip *`就可以压缩当前文件夹了，与别的命令有点不同，这个命令不能识别`./`或`.`必须要`*`
+### tar
+压缩 a.c文件为test.tar.gz
+```sh
+touch a.c       
+tar -czvf test.tar.gz a.c   
+# a.c
+```
+解压文件
+```sh
+tar -xzvf test.tar.gz 
+#a.c
+```
