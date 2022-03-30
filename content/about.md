@@ -14,8 +14,16 @@ date: 2022-02-07T17:45:08+08:00
 Github：https://github.com/lyj0309
 
 # 常用网站
+|   |   |
+|---|---|
+|代码随想录| <https://www.programmercarl.com/>|
+|算法模板| <https://suanfa.fakev.cn>|
+|github| <https://github.com/>|
+|github镜像| <https://gh.fakev.cn/>|
+|音乐解锁| <https://demo.unlock-music.dev/>|
+| 学习git  |  <https://gitlearn.fakev.cn> |
+| html转md  |  <https://sitdown.mdnice.com/Demo.html> |
 
-代码启示录
-github
+
 
 

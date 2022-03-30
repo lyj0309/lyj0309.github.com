@@ -108,3 +108,8 @@ tar -czvf test.tar.gz a.c
 tar -xzvf test.tar.gz 
 #a.c
 ```
+## 监控
+### 查看网络流量
+nload 
+### 任务管理器
+top htop
