@@ -21,6 +21,7 @@ Github：https://github.com/lyj0309
 |音乐解锁| <https://demo.unlock-music.dev/>|
 | 学习git  |  <https://gitlearn.fakev.cn> |
 | html转md  |  <https://sitdown.mdnice.com/Demo.html> |
+| 软件目录  |  <https://mp.weixin.qq.com/s/qc8Mhj4-T1_tq3zENe-45w> |
 
 
 
