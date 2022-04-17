@@ -2,8 +2,10 @@
 
 docker-compose我认为是单机管理容器的最佳方案，如果要多机
 ## docker安装
-```
-curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+```sh
+sudo apt-get remove docker docker-engine docker.io containerd runc
+# curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+curl -fsSL https://get.docker.com | bash -s docker 
 ```
 
 ## 换源
@@ -35,7 +37,7 @@ chmod +x /usr/local/bin/docker-compose
 
 ## compose arm 版本
 ```sh
-wget https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-armv7
+wget https://github.com/docker/compose/releases/download/v2.4.1/docker-compose-linux-armv7
 mv ./docker-compose-linux-armv7 /usr/local/bin/docker-compose
 chmod +x  /usr/local/bin/docker-compose
 ```

@@ -1,0 +1,37 @@
+# 前端基础
+
+
+## vue
+
+
+### 基础语法
+模板语法
+`{{}}`,在网页之中
+`:src="name"` 在标签之中,name为变量
+
+
+### 输入
+
+`@input` 绑定输入函数
+`v-model` 双向绑定变量
+`<input type="text" v-model="input" @input="handleInput" placeholder="请输入要搜索的菜单内容" />`
+
+### 循环
+
+`v-for="(obj,idx) in showList"`
+
+### 点击事件 
+ `@click="add"`
+
+### 生命周期
+`created(){}`
+
+## axios
+
+```js
+const res = await axios.get("/09/carList.json");
+console.log("res", res.data);
+```
+## js
+深拷贝
+`JSON.parse(JSON.stringify(this.list))`
