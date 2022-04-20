@@ -18,7 +18,7 @@
 
 ## 快速使用
 
-[点这里](https://fakev.lanzouh.com/iULeI02ji7xa)下载exe文件，打开，输入账号密码即可开始
+[点这里](https://fakev.lanzouh.com/iSogN03cfffg)下载exe文件，打开，输入账号密码即可开始
 
 ![image.png](https://tva1.sinaimg.cn/large/0077qBLuly1h08iwpvrd8j313z0gq76k.jpg)
 
