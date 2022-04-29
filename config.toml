@@ -83,6 +83,8 @@ title = 'FAKEV'
     snippetLength = 50
     #  搜索结果中高亮部分的 HTML 标签
     highlightTag = "em"
+    #  搜索绑定快捷键
+    shortcutKey = "/"
     #  是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
     [params.search.algolia]
