@@ -7,10 +7,10 @@ docker exec -it -c efk-kibana-1 cat
 `i18n.locale: "zh-CN"`
 
 ```sh
-docker exec -ti kib-01 sh -c "cat << EOF >> config/kibana.yml 
+docker exec -ti kib sh -c "cat << EOF >> config/kibana.yml 
 i18n.locale: \"zh-CN\"
 EOF"
 ```
 
 重启kibana
-`docker restart kib-01`
+`docker restart kib`

@@ -21,7 +21,7 @@ es就启动了
 
 ## 分词器安装
 ```sh
-esver=8.0.0
+esver=7.14.2
 
 #安装解压
 apt install unzip -y

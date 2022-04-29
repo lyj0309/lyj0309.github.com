@@ -1,0 +1,53 @@
+# 网页字体加密原理（学习通为例）
+
+
+## 前言
+使用学习通网页做题的时候，想复制题目，结果得到的是乱码，打开源码一看，原来是对字体进行了加密
+
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1qj4ziltxj30kz085tay.jpg)
+
+## 原理分析
+### unicode  
+
+unicode规定了汉字的编码，如`干`这个字对应的unicode编码是`uni5E72`
+比如我下载了一个字体，用软件打开如`fontCreator`,就可以找到
+
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1qjb49yqdj30ca05a753.jpg)
+### 学习通怎么做的
+
+这道题中，这几个字是`font-cxsecret`字体，这个字体，就是学习通的加密字体，这个字体的位置可以在head中找到
+
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1qjfw1rbbj30gm04rmz4.jpg)
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1qjgiwodkj315t02ztbt.jpg)
+
+把这个加密字体保存下来打开
+
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1qjj05ieoj30yw09uacn.jpg)
+
+好像并没有啥问题，实际上并不是，我拿`电` 举例，在学习通的字体中，编号为`uni5B24`，但在常规字体中，`电`的编号是`uni7535`
+
+学习通字体规定的`uni5B24`的形状
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1qjo62qdcj303i04kq2v.jpg)
+
+常规字体，或者说unicode规定`uni5B24`的形状
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1qjq8j0e0j305j05b0tb.jpg)
+
+回到网页，我们可以看到，`电`对应的就是`嬤`
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1qjsdb6o5j30eo069dhn.jpg)
+
+
+### 结论
+学习通这招不可谓很巧(yin)妙(xian)，总的来说，学习通的字体加密有以下几步
+
+1. 在这道题目中随机选择几个字，进行加密，如要加密`电`这个字，先把`电`的字体形状找到，让这个字体形状对上另一个编号如`uni5B24`，生成字体，字体中包含加密的字
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1qjo62qdcj303i04kq2v.jpg)
+
+2. 把原来网页中正常的字改成加密后的编码
+
+3. 让加密字的字体属于加密字体
+
+
+
+## ref
+<https://blog.csdn.net/litang199612/article/details/83413002>  
+<https://blog.csdn.net/qq_35741999/article/details/82018049>
