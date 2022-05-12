@@ -1,0 +1,20 @@
+# 盘点一下免费在线深度学习平台
+
+
+## colab
+**需魔法上网，google账号**
+<https://colab.research.google.com/>
+没说每月能用多少小时，10几小时应该没问题
+## Kaggle
+<https://www.kaggle.com/>
+每月30小时
+
+## 恒源云
+新人100元
+<https://gpushare.com/>
+
+## 九天 • 毕昇
+中国移动向高校推出的平台，免费额度尚可
+<https://jtedu.cmri.cn/>
+
+拼多多式拉人获取时长
