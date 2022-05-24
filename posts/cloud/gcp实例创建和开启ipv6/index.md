@@ -35,6 +35,9 @@ Ps: 流量不能来中国，不然就要价钱，所以亮机就好
 
 ![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1u1gfjfxqj315i0k3n1n.jpg)
 
+### 特别注意，免费磁盘是标准永久性磁盘
+![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h2b9eu98q6j30lv07agms.jpg)
+
 打开高级选项以配置ssh和ipv6
 
 ![image.png](https://wx1.sinaimg.cn/large/008rgIcAly1h1u1hmjrs8j30eo02gq38.jpg)
