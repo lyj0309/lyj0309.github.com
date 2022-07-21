@@ -884,3 +884,39 @@ class Program
     }
 }
 ```
+## 使用channel
+在一般多线程中，会使用共享变量的方式来通信，这时候就需要加锁，会影响线程执行速度，在go中，用channel的方式来通信，使得资源利用更好，这种方法在c#中同样适用
+
+```c#
+
+using System.Threading.Channels;
+
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        await SingleProducerSingleConsumer();
+
+        Console.ReadKey();
+    }
+
+    public static async Task SingleProducerSingleConsumer()
+    {
+        var channel = Channel.CreateUnbounded<int>();
+        var reader = channel.Reader;
+        for (int i = 0; i < 10; i++)
+        {
+            await channel.Writer.WriteAsync(i + 1);
+        }
+
+        while (await reader.WaitToReadAsync())
+        {
+            if (reader.TryRead(out var number))
+            {
+                Console.WriteLine(number);
+            }
+        }
+    }
+}
+
+```
