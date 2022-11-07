@@ -40,6 +40,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/8.0/getting-started.html
 }
 ```
 
+
 ## es配置用户名密码
 
 + 修改配置文件./config/elasticsearch.yml

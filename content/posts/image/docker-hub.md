@@ -64,4 +64,23 @@ proxy:
 ```
 然后`systemctl restart docker`即可
 
-未完待续···
+## 存在的问题
+通过原理得知，如果拉取了某个镜像的`latest`，首次回去dockerhub拉取，下次再拉取的时候，由于本地有次镜像，所以不会拉取dockerhub的了，遂不能获取到最新版本的镜像
+
+## 问题解决方案
+每天删一次latest标签的镜像
+```sh
+#!/bin/bash
+cd /home/ubuntu/registry/data/docker/registry/v2/repositories/library
+path=`pwd`
+ls $path | while read line
+do
+  l1="$line/_manifests/tags"
+  echo "name: $line"
+  if [[ `ls $l1` == *latest* ]]
+  then
+    rm -r $l1/latest
+  	echo 删除 $line $l1 
+  fi
+done
+```
