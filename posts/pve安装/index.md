@@ -279,3 +279,6 @@ chmod +x /var/lib/lxc/101/mount_hook.sh
 ```
 
 - 可以运行omv了
+
+## 支持ipv6
+https://www.haiyun.me/archives/1416.html#comment-688
