@@ -26,7 +26,11 @@ services:
 
 ## 打开硬解加速
 正常来说，直接到jellyfin设置打开硬解加速即可
+
 ![](../../images/2022-11-10-17-33-49.png)
+
+
+
 但是，因为是11代以上的酷睿，不能这样，这样直接是打不开的
 
 根据`jellyfin`官方文档，<https://jellyfin.org/docs/general/administration/hardware-acceleration/#intel-gen9-and-gen11-igpus>
