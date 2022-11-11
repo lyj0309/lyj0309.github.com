@@ -352,4 +352,4 @@ title = 'FAKEV'
     [markup.goldmark.renderer]
       unsafe = true
 
-staticDir = ['images']
+staticDir = ['myImages']
