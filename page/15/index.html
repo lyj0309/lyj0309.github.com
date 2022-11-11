@@ -1,13 +1,126 @@
-<!doctype html><html lang=zh-cn><head><meta name=generator content="Hugo 0.85.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>FAKEV</title><meta name=author content="lyj: https://github.com/lyj0309"><meta name=description content="技术博客分享站"><meta name=keywords content="FAKEV,go,lyj"><meta itemprop=name content="FAKEV"><meta itemprop=description content="技术博客分享站"><meta property="og:title" content="FAKEV"><meta property="og:description" content="技术博客分享站"><meta property="og:type" content="website"><meta property="og:url" content="https://fakev.cn/"><meta name=twitter:card content="summary"><meta name=twitter:title content="FAKEV"><meta name=twitter:description content="技术博客分享站"><meta name=application-name content="FAKEV"><meta name=apple-mobile-web-app-title content="FAKEV"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/><link rel=alternate href=/index.xml type=application/rss+xml title=FAKEV><link rel=feed href=/index.xml type=application/rss+xml title=FAKEV><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","url":"https:\/\/fakev.cn\/","inLanguage":"zh-CN","author":{"@type":"Person","name":"lyj"},"description":"技术博客分享站","name":"FAKEV"}</script></head><body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=FAKEV><span class=header-title-text>FAKEV</span></a></div><nav><ul class=menu><li class=menu-item><a class=menu-link href=/posts/>所有文章</a></li><li class=menu-item><a class=menu-link href=/tags/>标签</a></li><li class=menu-item><a class=menu-link href=/categories/>分类</a></li><li class=menu-item><a class=menu-link href=/about/>关于</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id=search-desktop><input type=text placeholder="搜索文章标题或内容 ..." id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw"></i></a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw"></i></a>
-<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin"></i></span></li><li class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw"></i></li></ul></nav></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=FAKEV><span class=header-title-text>FAKEV</span></a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><nav><ul class=menu id=menu-mobile><li class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="搜索文章标题或内容 ..." id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw"></i></a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw"></i></a>
-<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin"></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></li><li class=menu-item><a class=menu-link href=/posts/>所有文章</a></li><li class=menu-item><a class=menu-link href=/tags/>标签</a></li><li class=menu-item><a class=menu-link href=/categories/>分类</a></li><li class=menu-item><a class=menu-link href=/about/>关于</a></li><li class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw"></i></li></ul></nav></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=container page-style=normal><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=所有文章><img class=lazyload src=/svg/loading.min.svg data-src="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" data-srcset="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 1.5x, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 2x" data-sizes=auto alt="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" title="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp"></a></div><h2 class=home-subtitle><div id=typeit-profile-subtitle class=typeit></div></h2><div class=links><a href=https://github.com/lyj0309 title=GitHub target=_blank rel="external nofollow noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i>
+<!doctype html><html lang=zh-cn>
+<head>
+<meta name=generator content="Hugo 0.91.2">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>FAKEV</title><meta name=author content="lyj: https://github.com/lyj0309">
+<meta name=description content="技术博客分享站">
+<meta name=keywords content="FAKEV,go,lyj"><meta itemprop=name content="FAKEV">
+<meta itemprop=description content="技术博客分享站"><meta property="og:title" content="FAKEV">
+<meta property="og:description" content="技术博客分享站">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fakev.cn/">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="FAKEV">
+<meta name=twitter:description content="技术博客分享站">
+<meta name=application-name content="FAKEV">
+<meta name=apple-mobile-web-app-title content="FAKEV"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/><link rel=alternate href=/index.xml type=application/rss+xml title=FAKEV>
+<link rel=feed href=/index.xml type=application/rss+xml title=FAKEV><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","url":"https:\/\/fakev.cn\/","inLanguage":"zh-CN","author":{"@type":"Person","name":"lyj"},"description":"技术博客分享站","name":"FAKEV"}</script></head>
+<body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=FAKEV><span class=header-title-text>FAKEV</span></a></div>
+<nav>
+<ul class=menu><li class=menu-item>
+<a class=menu-link href=/posts/>所有文章</a></li><li class=menu-item>
+<a class=menu-link href=/tags/>标签</a></li><li class=menu-item>
+<a class=menu-link href=/categories/>分类</a></li><li class=menu-item>
+<a class=menu-link href=/about/>关于</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id=search-desktop>
+<input type=text placeholder="搜索文章标题或内容 ..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</li><li class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust fa-fw"></i>
+</li>
+</ul>
+</nav></div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title=FAKEV><span class=header-title-text>FAKEV</span></a></div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<nav>
+<ul class=menu id=menu-mobile><li class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder="搜索文章标题或内容 ..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+取消
+</a>
+</li><li class=menu-item><a class=menu-link href=/posts/>所有文章</a></li><li class=menu-item><a class=menu-link href=/tags/>标签</a></li><li class=menu-item><a class=menu-link href=/categories/>分类</a></li><li class=menu-item><a class=menu-link href=/about/>关于</a></li><li class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust fa-fw"></i>
+</li></ul>
+</nav>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=container page-style=normal><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=所有文章><img class=lazyload src=/svg/loading.min.svg data-src="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" data-srcset="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 1.5x, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 2x" data-sizes=auto alt="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" title="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp"></a></div><h2 class=home-subtitle><div id=typeit-profile-subtitle class=typeit></div></h2><div class=links><a href=https://github.com/lyj0309 title=GitHub target=_blank rel="external nofollow noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i>
 </a><a href=https://www.zhihu.com/people/liang-yan-jun-72 title=知乎 target=_blank rel="external nofollow noopener noreffer me"><i data-svg-src=/lib/simple-icons/icons/zhihu.min.svg></i>
-</a><a href=/index.xml title=RSS target=_blank rel="external nofollow noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline"><a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E6%95%B0%E6%8D%AE%E5%BA%93/>盘点一下免费数据库</a></h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span>&nbsp;<span class=post-publish title="0001-01-01 00:00:00">发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>mysql PlaneScale MemFire postgre Supabase redis Upstash redislabs mongodb 搜索引擎 Bonsai（es） algolia</div><div class=post-footer><a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E6%95%B0%E6%8D%AE%E5%BA%93/>阅读全文</a></div></article><ul class=pagination><li class=page-item><span class=page-link><a href=/>1</a></span></li><li class=page-item><span class=page-link aria-hidden=true>&mldr;</span></li><li class=page-item><span class=page-link><a href=/page/13/>13</a></span></li><li class=page-item><span class=page-link><a href=/page/14/>14</a></span></li><li class="page-item active"><span class=page-link><a href=/page/15/>15</a></span></li></ul></div></main><footer class=footer><div class=footer-container><div class="footer-line powered">由 <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.85.0">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.14"><img class=fixit-icon src=/images/fixit.svg alt="FixIt logo">&nbsp;FixIt</a></div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i>
+</a><a href=/index.xml title=RSS target=_blank rel="external nofollow noopener noreffer me"><i class="fas fa-rss fa-fw"></i>
+</a></div></div>
+<article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E6%95%B0%E6%8D%AE%E5%BA%93/>盘点一下免费数据库</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
+lyj</a></span>&nbsp;<span class=post-publish title="0001-01-01 00:00:00">发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>mysql PlaneScale MemFire postgre Supabase redis Upstash redislabs mongodb 搜索引擎 Bonsai（es） algolia</div><div class=post-footer>
+<a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E6%95%B0%E6%8D%AE%E5%BA%93/>阅读全文</a></div>
+</article><ul class=pagination><li class=page-item>
+<span class=page-link>
+<a href=/>1</a>
+</span>
+</li><li class=page-item>
+<span class=page-link aria-hidden=true>&mldr;</span>
+</li><li class=page-item>
+<span class=page-link>
+<a href=/page/13/>13</a>
+</span>
+</li><li class=page-item>
+<span class=page-link>
+<a href=/page/14/>14</a>
+</span>
+</li><li class="page-item active">
+<span class=page-link>
+<a href=/page/15/>15</a>
+</span>
+</li></ul></div></main><footer class=footer>
+<div class=footer-container><div class="footer-line powered">由 <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.91.2">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.14"><img class=fixit-icon src=/images/fixit.svg alt="FixIt logo">&nbsp;FixIt</a>
+</div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i>
 <span itemprop=copyrightYear>2020 - 2022</span><span class=author itemprop=copyrightHolder>
-<a href=https://github.com/lyj0309 target=_blank rel="external nofollow noopener noreffer">lyj</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line><span class=icp><a class=theme-link href=https://beian.miit.gov.cn>桂ICP备20003848号</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw"></i>
-</a><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw"></i></a></div><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js defer></script><script type=text/javascript src=/lib/algoliasearch/algoliasearch-lite.umd.min.js defer></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js async defer></script><script type=text/javascript src=/lib/typeit/typeit.min.js defer></script><script type=text/javascript src=/lib/katex/katex.min.js defer></script><script type=text/javascript src=/lib/katex/auto-render.min.js defer></script><script type=text/javascript src=/lib/katex/copy-tex.min.js defer></script><script type=text/javascript src=/lib/katex/mhchem.min.js defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",editLockTitle:"锁定可编辑代码块",editUnLockTitle:"解锁可编辑代码块",editable:!0,maxShownLines:10},cookieconsent:{content:{dismiss:"同意",endlevel:6,link:"了解更多",message:"本网站使用 Cookies 来改善您的浏览体验。"},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},data:{"typeit-profile-subtitle":"日常博客"},enablePWA:null,math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{algoliaAppID:"2JCAO8XQY2",algoliaIndex:"blog",algoliaSearchKey:"fd39521e89aef7cc0d57626786cf0644",highlightTag:"em",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"algolia"},typeit:{cursorChar:null,cursorSpeed:null,data:{"typeit-profile-subtitle":["typeit-profile-subtitle"]},duration:null,speed:null}}</script><script type=text/javascript src=/js/theme.min.js defer></script></body></html>
+<a href=https://github.com/lyj0309 target=_blank rel="external nofollow noopener noreffer">lyj</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line><span class=icp><a class=theme-link href=https://beian.miit.gov.cn>桂ICP备20003848号</a></span></div></div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部>
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title=查看评论>
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js defer></script><script type=text/javascript src=/lib/algoliasearch/algoliasearch-lite.umd.min.js defer></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js async defer></script><script type=text/javascript src=/lib/typeit/typeit.min.js defer></script><script type=text/javascript src=/lib/katex/katex.min.js defer></script><script type=text/javascript src=/lib/katex/auto-render.min.js defer></script><script type=text/javascript src=/lib/katex/copy-tex.min.js defer></script><script type=text/javascript src=/lib/katex/mhchem.min.js defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",editLockTitle:"锁定可编辑代码块",editUnLockTitle:"解锁可编辑代码块",editable:!0,maxShownLines:10},cookieconsent:{content:{dismiss:"同意",endlevel:6,link:"了解更多",message:"本网站使用 Cookies 来改善您的浏览体验。"},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},data:{"typeit-profile-subtitle":"日常博客"},enablePWA:null,math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{algoliaAppID:"2JCAO8XQY2",algoliaIndex:"blog",algoliaSearchKey:"fd39521e89aef7cc0d57626786cf0644",highlightTag:"em",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"algolia"},typeit:{cursorChar:null,cursorSpeed:null,data:{"typeit-profile-subtitle":["typeit-profile-subtitle"]},duration:null,speed:null}}</script><script type=text/javascript src=/js/theme.min.js defer></script></body>
+</html>
