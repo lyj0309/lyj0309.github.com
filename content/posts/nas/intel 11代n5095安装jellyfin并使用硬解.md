@@ -29,7 +29,7 @@ services:
 ## 打开硬解加速
 正常来说，直接到jellyfin设置打开硬解加速即可
 
-![](../../images/2022-11-10-17-33-49.png)
+![](/images/2022-11-10-17-33-49.png)
 
 
 
@@ -37,7 +37,7 @@ services:
 
 根据`jellyfin`官方文档，<https://jellyfin.org/docs/general/administration/hardware-acceleration/#intel-gen9-and-gen11-igpus>
 专门对这个问题做了探讨
-![](../../images/2022-11-10-17-35-19.png)
+![](/images/2022-11-10-17-35-19.png)
 结论就是11代以上必须要打开低功耗模式并且打开` Guc/Huc`这个（内核模块？）
 
 这个模块默认是不打开的，需要你手动开启，开启方法是在
@@ -46,6 +46,6 @@ services:
 然后重启电脑
 
 再检查低功耗模式是否打开
-![](../../images/2022-11-10-17-47-22.png)
+![](/images/2022-11-10-17-47-22.png)
 
 愉快观影吧！

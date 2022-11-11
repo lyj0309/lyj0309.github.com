@@ -11,8 +11,14 @@ title = 'FAKEV'
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "FixIt"
 
-# 使得图片能够以相对路径访问到
-uglyURLs = true
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'images'
+target = 'static/images'
+
 
 # 作者配置
 [author]
