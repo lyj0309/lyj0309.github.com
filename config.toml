@@ -8,13 +8,11 @@ hasCJKLanguage = true
 # 网站标题
 title = 'FAKEV'
 
-staticDir = ['myImages',"assets"]
-
-
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "FixIt"
 
-
+# 使得图片能够以相对路径访问到
+uglyURLs = true
 
 # 作者配置
 [author]
