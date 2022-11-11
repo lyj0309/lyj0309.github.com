@@ -13,6 +13,10 @@ theme = "FixIt"
 
 ## 挂载图片
 [[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
 source = 'images'
 target = 'static/images'
 
