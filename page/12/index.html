@@ -89,6 +89,12 @@
 </a><a href=/index.xml title=RSS target=_blank rel="external nofollow noopener noreffer me"><i class="fas fa-rss fa-fw"></i>
 </a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/devops/docker/>docker&compose安装</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
+lyj</a></span>&nbsp;<span class=post-publish title="2022-02-07 17:52:28">发布于 <time datetime=2022-02-07>2022-02-07</time></span></div><div class=content>docker-compose我认为是单机管理容器的最佳方案，如果要多机 docker安装 sudo apt-get remove docker docker-engine docker.io containerd runc # curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun curl -fsSL https://get.docker.com | bash -s docker 换源</div><div class=post-footer>
+<a href=/posts/devops/docker/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/devops/>devops</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/cloud/fly/>Fly.io 免费PaaS平台，以及哪吒面板的部署</a>
 </h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
 lyj</a></span>&nbsp;<span class=post-publish title="2022-02-07 15:06:48">发布于 <time datetime=2022-02-07>2022-02-07</time></span></div><div class=content>fly.io 类似于Okteto、Heroku和Railway的PaaS平台。 只能通过CLI登录，对小白可能有些不太友好。 官网：fly.io 免费额度：F</div><div class=post-footer>
@@ -118,12 +124,6 @@ lyj</a></span>&nbsp;<span class=post-publish title="2021-10-21 18:52:55">发布�
 lyj</a></span>&nbsp;<span class=post-publish title="2021-10-21 18:52:55">发布于 <time datetime=2021-10-21>2021-10-21</time></span></div><div class=content>go提供了一个http包，可以通过这个包方便的进行http请求 import ( "fmt" "io/ioutil" "net/http" "strings" ) // http.Get func httpGet() { resp, err := http.Get("http://www.baidu.com") if err != nil { fmt.Println(err) return } defer resp.Body.Close() body, err := ioutil.ReadAll(resp.Body) fmt.Println(string(body)) } func httpPost() { resp, err := http.Post("http://www.baidu.com",</div><div class=post-footer>
 <a href=/posts/go/%E8%AF%B7%E6%B1%82-http/>阅读全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/go/>Go</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/front/fetch/>webApi fetch使用</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span>&nbsp;<span class=post-publish title="2021-10-21 18:52:55">发布于 <time datetime=2021-10-21>2021-10-21</time></span></div><div class=content>概述 fetch()的功能与 XMLHttpRequest 基本相同，但有三个主要的差异。 （1）fetch()使用 Promise，不使用回调函数，因此大大简化了写法，写起来</div><div class=post-footer>
-<a href=/posts/front/fetch/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%89%8D%E7%AB%AF/>前端</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>

@@ -4,25 +4,25 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>intel 11代n5095安装jellyfin并使用硬解 - FAKEV</title><meta name=author content="lyj: https://github.com/lyj0309">
-<meta name=description content="前言 自己想组一个nas，一番权衡买了n5095的板子，想着这怎么说也能流畅硬解了吧（之前是j1900），然后安装jellyfin的艰难之路（">
-<meta name=keywords content="FAKEV,go,lyj"><meta itemprop=name content="intel 11代n5095安装jellyfin并使用硬解">
-<meta itemprop=description content="前言 自己想组一个nas，一番权衡买了n5095的板子，想着这怎么说也能流畅硬解了吧（之前是j1900），然后安装jellyfin的艰难之路（"><meta itemprop=datePublished content="2022-11-10T12:47:15+08:00">
-<meta itemprop=dateModified content="2022-11-10T12:47:15+08:00">
-<meta itemprop=wordCount content="496">
-<meta itemprop=keywords content><meta property="og:title" content="intel 11代n5095安装jellyfin并使用硬解">
-<meta property="og:description" content="前言 自己想组一个nas，一番权衡买了n5095的板子，想着这怎么说也能流畅硬解了吧（之前是j1900），然后安装jellyfin的艰难之路（">
+<title>windows下vpn只用内网路由 - FAKEV</title><meta name=author content="lyj: https://github.com/lyj0309">
+<meta name=description content="windows下vpn只用内网路由 最近🐏了居家办公，需要连接公司的网络，所以使用公司的vpn 但是有个问题，默认所有的流量都会走公司的vpn,">
+<meta name=keywords content="FAKEV,go,lyj"><meta itemprop=name content="windows下vpn只用内网路由">
+<meta itemprop=description content="windows下vpn只用内网路由 最近🐏了居家办公，需要连接公司的网络，所以使用公司的vpn 但是有个问题，默认所有的流量都会走公司的vpn,"><meta itemprop=datePublished content="2022-12-26T14:27:21+08:00">
+<meta itemprop=dateModified content="2022-12-26T14:27:21+08:00">
+<meta itemprop=wordCount content="245">
+<meta itemprop=keywords content><meta property="og:title" content="windows下vpn只用内网路由">
+<meta property="og:description" content="windows下vpn只用内网路由 最近🐏了居家办公，需要连接公司的网络，所以使用公司的vpn 但是有个问题，默认所有的流量都会走公司的vpn,">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://fakev.cn/posts/nas/intel-11%E4%BB%A3n5095%E5%AE%89%E8%A3%85jellyfin%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%A1%AC%E8%A7%A3/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2022-11-10T12:47:15+08:00">
-<meta property="article:modified_time" content="2022-11-10T12:47:15+08:00">
+<meta property="og:url" content="https://fakev.cn/posts/network/windows%E4%B8%8Bvpn%E5%8F%AA%E7%94%A8%E5%86%85%E7%BD%91%E8%B7%AF%E7%94%B1/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-12-26T14:27:21+08:00">
+<meta property="article:modified_time" content="2022-12-26T14:27:21+08:00">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="intel 11代n5095安装jellyfin并使用硬解">
-<meta name=twitter:description content="前言 自己想组一个nas，一番权衡买了n5095的板子，想着这怎么说也能流畅硬解了吧（之前是j1900），然后安装jellyfin的艰难之路（">
+<meta name=twitter:title content="windows下vpn只用内网路由">
+<meta name=twitter:description content="windows下vpn只用内网路由 最近🐏了居家办公，需要连接公司的网络，所以使用公司的vpn 但是有个问题，默认所有的流量都会走公司的vpn,">
 <meta name=application-name content="FAKEV">
 <meta name=apple-mobile-web-app-title content="FAKEV"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/posts/nas/intel-11%E4%BB%A3n5095%E5%AE%89%E8%A3%85jellyfin%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%A1%AC%E8%A7%A3/><link rel=prev href=https://fakev.cn/posts/hardware/%E9%95%81%E5%85%89%E5%86%85%E5%AD%98%E6%9D%A1%E9%89%B4%E7%9C%9F%E9%98%B2%E4%BC%AA/><link rel=next href=https://fakev.cn/posts/network/windows%E4%B8%8Bvpn%E5%8F%AA%E7%94%A8%E5%86%85%E7%BD%91%E8%B7%AF%E7%94%B1/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"intel 11代n5095安装jellyfin并使用硬解","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/fakev.cn\/posts\/nas\/intel-11%E4%BB%A3n5095%E5%AE%89%E8%A3%85jellyfin%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%A1%AC%E8%A7%A3\/"},"genre":"posts","wordcount":496,"url":"https:\/\/fakev.cn\/posts\/nas\/intel-11%E4%BB%A3n5095%E5%AE%89%E8%A3%85jellyfin%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%A1%AC%E8%A7%A3\/","datePublished":"2022-11-10T12:47:15+08:00","dateModified":"2022-11-10T12:47:15+08:00","publisher":{"@type":"Organization","name":"lyj"},"author":{"@type":"Person","name":"lyj"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/posts/network/windows%E4%B8%8Bvpn%E5%8F%AA%E7%94%A8%E5%86%85%E7%BD%91%E8%B7%AF%E7%94%B1/><link rel=prev href=https://fakev.cn/posts/nas/intel-11%E4%BB%A3n5095%E5%AE%89%E8%A3%85jellyfin%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%A1%AC%E8%A7%A3/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"windows下vpn只用内网路由","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/fakev.cn\/posts\/network\/windows%E4%B8%8Bvpn%E5%8F%AA%E7%94%A8%E5%86%85%E7%BD%91%E8%B7%AF%E7%94%B1\/"},"genre":"posts","wordcount":245,"url":"https:\/\/fakev.cn\/posts\/network\/windows%E4%B8%8Bvpn%E5%8F%AA%E7%94%A8%E5%86%85%E7%BD%91%E8%B7%AF%E7%94%B1\/","datePublished":"2022-12-26T14:27:21+08:00","dateModified":"2022-12-26T14:27:21+08:00","publisher":{"@type":"Organization","name":"lyj"},"author":{"@type":"Person","name":"lyj"},"description":""}</script></head>
 <body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -91,13 +91,13 @@
 <div class=toc-content id=toc-content-auto></div></aside>
 <aside class=aside-custom>
 </aside>
-<article class="page single"><h1 class="single-title animate__animated animate__flipInX">intel 11代n5095安装jellyfin并使用硬解</h1><div class=post-meta>
+<article class="page single"><h1 class="single-title animate__animated animate__flipInX">windows下vpn只用内网路由</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
 lyj</a></span></div>
-<div class=post-meta-line><span title="2022-11-10 12:47:15">
-<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-11-10>2022-11-10</time>
-</span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 496 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id=/posts/nas/intel-11%E4%BB%A3n5095%E5%AE%89%E8%A3%85jellyfin%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%A1%AC%E8%A7%A3/ class=leancloud_visitors data-flag-title="intel 11代n5095安装jellyfin并使用硬解">
+<div class=post-meta-line><span title="2022-12-26 14:27:21">
+<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-12-26>2022-12-26</time>
+</span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 245 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;<span id=/posts/network/windows%E4%B8%8Bvpn%E5%8F%AA%E7%94%A8%E5%86%85%E7%BD%91%E8%B7%AF%E7%94%B1/ class=leancloud_visitors data-flag-title=windows下vpn只用内网路由>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count>-</span>&nbsp;次阅读
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept=false>
@@ -107,56 +107,35 @@ lyj</a></span></div>
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
-<li><a href=#前言>前言</a></li>
-<li><a href=#docker-compose>docker compose</a></li>
-<li><a href=#打开硬解加速>打开硬解加速</a></li>
+<li><a href=#原理>原理</a></li>
 </ul>
 </nav></div>
-</div><div class=content id=content><h2 id=前言>前言</h2>
-<p>自己想组一个nas，一番权衡买了n5095的板子，想着这怎么说也能流畅硬解了吧（之前是j1900），然后安装jellyfin的艰难之路（各种坑）</p>
-<h2 id=docker-compose>docker compose</h2>
-<pre tabindex=0><code class=language-docker-compse data-lang=docker-compse>version: &quot;3.5&quot;
-services:
-  jellyfin:
-    #   image: jellyfin/jellyfin:10.8.7
-    image: nyanmisaka/jellyfin:221029-amd64
-    container_name: jellyfin
-    network_mode: &quot;host&quot;
-    volumes:
-      - /etc/timezone:/etc/timezone:ro
-      - ./jellyfin/config:/config
-      - ./jellyfin/cache:/cache
-      - /mnt/3t:/mnt/3t
-    devices:
-      - /dev/dri/renderD128:/dev/dri/renderD128
-      - /dev/dri/card0:/dev/dri/card0
-    restart: &quot;unless-stopped&quot;
-</code></pre><p>主要注意一点，就是镜像可以使用<code>nyanmisaka</code>这个大佬的镜像，基本东西都装全了，然后是<code>devices</code>需要映射显卡</p>
-<h2 id=打开硬解加速>打开硬解加速</h2>
-<p>正常来说，直接到jellyfin设置打开硬解加速即可</p>
-<p><img class=lazyload src=/svg/loading.min.svg data-src=/images/2022-11-10-17-33-49.png data-srcset="/images/2022-11-10-17-33-49.png, /images/2022-11-10-17-33-49.png 1.5x, /images/2022-11-10-17-33-49.png 2x" data-sizes=auto alt=/images/2022-11-10-17-33-49.png title=/images/2022-11-10-17-33-49.png></p>
-<p>但是，因为是11代以上的酷睿，不能这样，这样直接是打不开的</p>
-<p>根据<code>jellyfin</code>官方文档，<a href=https://jellyfin.org/docs/general/administration/hardware-acceleration/#intel-gen9-and-gen11-igpus target=_blank rel="external nofollow noopener noreffer">https://jellyfin.org/docs/general/administration/hardware-acceleration/#intel-gen9-and-gen11-igpus</a>
-专门对这个问题做了探讨
-<img class=lazyload src=/svg/loading.min.svg data-src=/images/2022-11-10-17-35-19.png data-srcset="/images/2022-11-10-17-35-19.png, /images/2022-11-10-17-35-19.png 1.5x, /images/2022-11-10-17-35-19.png 2x" data-sizes=auto alt=/images/2022-11-10-17-35-19.png title=/images/2022-11-10-17-35-19.png>
-结论就是11代以上必须要打开低功耗模式并且打开<code> Guc/Huc</code>这个（内核模块？）</p>
-<p>这个模块默认是不打开的，需要你手动开启，开启方法是在
-<code>/etc/modprobe.d/i915.conf</code>文件中写入<code> options i915 enable_guc=2</code> linux内核大于4.10
-小于则是<code>options i915 enable_guc_loading=1</code>
-然后重启电脑</p>
-<p>再检查低功耗模式是否打开
-<img class=lazyload src=/svg/loading.min.svg data-src=/images/2022-11-10-17-47-22.png data-srcset="/images/2022-11-10-17-47-22.png, /images/2022-11-10-17-47-22.png 1.5x, /images/2022-11-10-17-47-22.png 2x" data-sizes=auto alt=/images/2022-11-10-17-47-22.png title=/images/2022-11-10-17-47-22.png></p>
-<p>愉快观影吧！</p>
+</div><div class=content id=content><h1 id=windows下vpn只用内网路由>windows下vpn只用内网路由</h1>
+<p>最近🐏了居家办公，需要连接公司的网络，所以使用公司的vpn<br>
+但是有个问题，默认所有的流量都会走公司的vpn, 可能会带来写网络安全隐患，于是想搞个只有公司内网走vpn的教程</p>
+<h2 id=原理>原理</h2>
+<p>正常来说，连上vpn后，vpn会接管所有的路由，需要你手动更改
+<img class=lazyload src=/svg/loading.min.svg data-src=/images/2022-12-26-13-56-32.png data-srcset="/images/2022-12-26-13-56-32.png, /images/2022-12-26-13-56-32.png 1.5x, /images/2022-12-26-13-56-32.png 2x" data-sizes=auto alt=/images/2022-12-26-13-56-32.png title=/images/2022-12-26-13-56-32.png></p>
+<p>在取消选中<code>使用默认网关</code>后，会只有当前网关的网络走路由
+<img class=lazyload src=/svg/loading.min.svg data-src=/images/2022-12-26-13-59-45.png data-srcset="/images/2022-12-26-13-59-45.png, /images/2022-12-26-13-59-45.png 1.5x, /images/2022-12-26-13-59-45.png 2x" data-sizes=auto alt=/images/2022-12-26-13-59-45.png title=/images/2022-12-26-13-59-45.png></p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=/images/2022-12-26-14-00-57.png data-srcset="/images/2022-12-26-14-00-57.png, /images/2022-12-26-14-00-57.png 1.5x, /images/2022-12-26-14-00-57.png 2x" data-sizes=auto alt=/images/2022-12-26-14-00-57.png title=/images/2022-12-26-14-00-57.png></p>
+<p>但，如果还有别的网络也属于公司，就需要手动添加路由了，如<code>172.30.64.107</code></p>
+<p>首先找到vpn的interface，记住id</p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=/images/2022-12-26-14-14-53.png data-srcset="/images/2022-12-26-14-14-53.png, /images/2022-12-26-14-14-53.png 1.5x, /images/2022-12-26-14-14-53.png 2x" data-sizes=auto alt=/images/2022-12-26-14-14-53.png title=/images/2022-12-26-14-14-53.png></p>
+<p>然后
+<code>route add -p 172.30.0.0 mask 255.255.0.0 0.0.0.0 if 65</code></p>
+<p>若是想删除</p>
+<p><code>route delete 172.30.0.0 mask 255.255.0.0 0.0.0.0</code></p>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span title="2022-11-10 12:47:15">更新于 2022-11-10</span>
+<span title="2022-12-26 14:27:21">更新于 2022-12-26</span>
 </div>
 <div class=post-info-license></div>
 </div>
 <div class=post-info-line>
-<div class=post-info-md><span><a href=/posts/nas/intel-11%E4%BB%A3n5095%E5%AE%89%E8%A3%85jellyfin%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%A1%AC%E8%A7%A3/index.md title=阅读原始文档 class=link-to-markdown>阅读原始文档</a></span></div>
+<div class=post-info-md><span><a href=/posts/network/windows%E4%B8%8Bvpn%E5%8F%AA%E7%94%A8%E5%86%85%E7%BD%91%E8%B7%AF%E7%94%B1/index.md title=阅读原始文档 class=link-to-markdown>阅读原始文档</a></span></div>
 <div class=post-info-share>
 <span></span>
 </div>
@@ -168,8 +147,7 @@ services:
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/hardware/%E9%95%81%E5%85%89%E5%86%85%E5%AD%98%E6%9D%A1%E9%89%B4%E7%9C%9F%E9%98%B2%E4%BC%AA/ class=prev rel=prev title=内存条科普以及镁光内存条鉴别><i class="fas fa-angle-left fa-fw"></i>内存条科普以及镁光内存条鉴别</a>
-<a href=/posts/network/windows%E4%B8%8Bvpn%E5%8F%AA%E7%94%A8%E5%86%85%E7%BD%91%E8%B7%AF%E7%94%B1/ class=next rel=next title=windows下vpn只用内网路由>windows下vpn只用内网路由<i class="fas fa-angle-right fa-fw"></i></a></div>
+<div class=post-nav><a href=/posts/nas/intel-11%E4%BB%A3n5095%E5%AE%89%E8%A3%85jellyfin%E5%B9%B6%E4%BD%BF%E7%94%A8%E7%A1%AC%E8%A7%A3/ class=prev rel=prev title="intel 11代n5095安装jellyfin并使用硬解"><i class="fas fa-angle-left fa-fw"></i>intel 11代n5095安装jellyfin并使用硬解</a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="external nofollow noopener noreffer">Valine</a>.
