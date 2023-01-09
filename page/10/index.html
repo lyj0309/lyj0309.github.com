@@ -89,6 +89,18 @@
 </a><a href=/index.xml title=RSS target=_blank rel="external nofollow noopener noreffer me"><i class="fas fa-rss fa-fw"></i>
 </a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/cx/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4%E8%A1%8C/>学习通脚本安装（命令行）</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
+lyj</a></span>&nbsp;<span class=post-publish title="2022-03-11 18:21:34">发布于 <time datetime=2022-03-11>2022-03-11</time></span></div><div class=content>前言 最近超星改网页改的厉害，导致很多网页脚本无法运行 遂使用命令行，绕过网页直接刷 刷前提醒 开倍数，使用脚本有风险，出现的结果本人一概不负责 脚本</div><div class=post-footer>
+<a href=/posts/cx/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4%E8%A1%8C/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%AD%A6%E4%B9%A0%E9%80%9A/>学习通</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/go/go-csv/>Go Csv</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
+lyj</a></span>&nbsp;<span class=post-publish title="2022-03-02 11:54:31">发布于 <time datetime=2022-03-02>2022-03-02</time></span></div><div class=content>go提供了一个读取库encoding package main import ( "encoding/csv" "log" "os" ) //go语言读写csv文件 func main() { //创建一个io对象 filename:="Person1.csv" f := ReadCsv(filename) //WriterCSV(filename) } //csv文件读取 func ReadCsv(filepath string)</div><div class=post-footer>
+<a href=/posts/go/go-csv/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/go/>Go</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/draft/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/>Linux基本命令</a>
 </h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
 lyj</a></span>&nbsp;<span class=post-publish title="2022-02-18 02:32:27">发布于 <time datetime=2022-02-18>2022-02-18</time></span></div><div class=content>文本操作 cat 查看文件 cat filename 写入文件 cat >> filename &lt;&lt; EOF #EOF是标记符，写什么无所谓，但EOF为大家默认 > hahaha > hehehe EOF #再次输入标记符表示结束，如果最初的标记</div><div class=post-footer>
@@ -111,17 +123,6 @@ lyj</a></span>&nbsp;<span class=post-publish title="2022-02-18 02:07:57">发布�
 lyj</a></span>&nbsp;<span class=post-publish title="2022-02-18 01:47:53">发布于 <time datetime=2022-02-18>2022-02-18</time></span></div><div class=content>es安装 esver=8.0.0 # 设置系统内存 sudo sysctl -w vm.max_map_count=262144 # docker pull elasticsearch:$esver docker run --name es --net elastic -p 9200:9200 -p 9300:9300 -it docker.elastic.co/elasticsearch/elasticsearch:8.0.0 es就启动了 访问https://ip:9200就能看到，是需要密码的，密码可</div><div class=post-footer>
 <a href=/posts/middleware/elastic/elastic%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8ik%E5%88%86%E8%AF%8D%E5%99%A8/>阅读全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/elastic/>elastic</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/front/npm%E5%92%8Cyarn%E6%8D%A2%E6%BA%90/>Npm和yarn换源</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span>&nbsp;<span class=post-publish title="2022-02-15 01:35:29">发布于 <time datetime=2022-02-15>2022-02-15</time></span></div><div class=content>yarn // 查询源 yarn config get registry // 更换国内源 yarn config set registry https://registry.npm.taobao.org/ // 恢复官方源 yarn config set registry https://registry.yarnpkg.com // 删除注册表 yarn config delete registry npm 注意 npm 更换国内镜像源之后，将无法再使用 npm search 命令，需要恢复</div><div class=post-footer>
-<a href=/posts/front/npm%E5%92%8Cyarn%E6%8D%A2%E6%BA%90/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%9B%BD%E5%86%85/>国内</a>,&nbsp;<a href=/tags/%E5%89%8D%E7%AB%AF/>前端</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/cloud/%E9%83%A8%E7%BD%B2cloudreve%E8%87%B3railway.app/>部署cloudreve至railway.app</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span>&nbsp;<span class=post-publish title="2022-02-12 01:50:37">发布于 <time datetime=2022-02-12>2022-02-12</time></span></div><div class=content>前言 railway是一个免费的PaaS平台https://railway.app,每月有5美元免费额度，如果添加支付方式则有5美元免费额度 生</div><div class=post-footer>
-<a href=/posts/cloud/%E9%83%A8%E7%BD%B2cloudreve%E8%87%B3railway.app/>阅读全文</a></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>

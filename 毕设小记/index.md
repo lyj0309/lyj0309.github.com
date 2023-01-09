@@ -1,0 +1,50 @@
+# 
+
+
+尝试使用vs code连接树莓派zero w进行远程开发，但是无法支持
+https://gh.fakev.cn/microsoft/vscode-remote-release/issues/669
+
+解决方案 sshfs
+https://gh.fakev.cn/SchoofsKelvin/vscode-sshfs
+
+摄像头教程
+https://blog.csdn.net/weixin_45994747/article/details/109605765
+
+人动检测
+<https://blog.csdn.net/qq_35624030/article/details/79833269>
+
+
+BytesIO
+
+## 功能设计
+socket
+1. 心跳包
+2. 上传文件后发送请求
+3. 小程序
++ 获取现场照片
++ 设置告警规则
++ 发送告警通知和照片
+
+plus
++ 实时监控
++ 降低成本
+
+detail
+告警规则:
++ 在画面中出现x时候,停留x秒
++ 出现画面变化
+
+
+## 摄像头上传文件至服务器
+1. http post
+2. websocket
+
+
+发送
+|   |   |
+|---|---|
+| PHOTO xxxx  |  上传照片 |
+
+
+
+## 小程序设计

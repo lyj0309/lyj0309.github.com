@@ -89,6 +89,18 @@
 </a><a href=/index.xml title=RSS target=_blank rel="external nofollow noopener noreffer me"><i class="fas fa-rss fa-fw"></i>
 </a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/linux/%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8-%E7%94%A8%E6%88%B7%E6%80%81%E5%92%8C%E5%86%85%E6%A0%B8%E6%80%81/>系统调用 用户态和内核态</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
+lyj</a></span>&nbsp;<span class=post-publish title="2022-03-18 21:25:46">发布于 <time datetime=2022-03-18>2022-03-18</time></span></div><div class=content>系统调用 在我们运行的用户程序中，凡是与系统级别的资源有关的操作（例如文件管理、进程控制、内存管理等）都必须通过系统调用方式向OS提出服务请求</div><div class=post-footer>
+<a href=/posts/linux/%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8-%E7%94%A8%E6%88%B7%E6%80%81%E5%92%8C%E5%86%85%E6%A0%B8%E6%80%81/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/>操作系统</a>,&nbsp;<a href=/tags/%E5%85%AB%E8%82%A1/>八股</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/linux/%E5%85%AC%E9%92%A5%E7%99%BB%E9%99%86/>linux 公钥登陆</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
+lyj</a></span>&nbsp;<span class=post-publish title="2022-03-18 20:44:06">发布于 <time datetime=2022-03-18>2022-03-18</time></span></div><div class=content>生成密钥 ssh-keygen -t rsa 编辑配置文件 vim /etc/ssh/sshd_config RSAAuthentication yes : 开启rsa验证 PubkeyAuthentication yes: 是否使用公钥 保存公钥到服务器 cat id_rsa.pub >>/root/.ssh/authorized_keys root用户，不同用户路径不同，注意权限，当前用户需</div><div class=post-footer>
+<a href=/posts/linux/%E5%85%AC%E9%92%A5%E7%99%BB%E9%99%86/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/linux/>linux</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/middleware/redis/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8bloomfilter/>布隆过滤器(BloomFilter)</a>
 </h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
 lyj</a></span>&nbsp;<span class=post-publish title="2022-03-18 20:44:06">发布于 <time datetime=2022-03-18>2022-03-18</time></span></div><div class=content>Bloom Filter 概念 布隆过滤器（英语：Bloom Filter）是1970年由一个叫布隆的小伙子提出的。它实际上是一个很长的二进制向量和一系列随机映射函数</div><div class=post-footer>
@@ -112,18 +124,6 @@ lyj</a></span>&nbsp;<span class=post-publish title="2022-03-15 21:34:28">发布�
 lyj</a></span>&nbsp;<span class=post-publish title="2022-03-13 20:20:37">发布于 <time datetime=2022-03-13>2022-03-13</time></span></div><div class=content>前言 最近超星改网页改的厉害，导致很多网页脚本无法运行 遂使用命令行，绕过网页直接刷 刷前提醒 刷前提醒 开倍数，使用脚本有风险，出现的结果本人一概不</div><div class=post-footer>
 <a href=/posts/cx/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E6%89%8B%E6%9C%BA%E5%91%BD%E4%BB%A4%E8%A1%8C/>阅读全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%AD%A6%E4%B9%A0%E9%80%9A/>学习通</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/cx/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4%E8%A1%8C/>学习通脚本安装（命令行）</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span>&nbsp;<span class=post-publish title="2022-03-11 18:21:34">发布于 <time datetime=2022-03-11>2022-03-11</time></span></div><div class=content>前言 最近超星改网页改的厉害，导致很多网页脚本无法运行 遂使用命令行，绕过网页直接刷 刷前提醒 开倍数，使用脚本有风险，出现的结果本人一概不负责 脚本</div><div class=post-footer>
-<a href=/posts/cx/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4%E8%A1%8C/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%AD%A6%E4%B9%A0%E9%80%9A/>学习通</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/go/go-csv/>Go Csv</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span>&nbsp;<span class=post-publish title="2022-03-02 11:54:31">发布于 <time datetime=2022-03-02>2022-03-02</time></span></div><div class=content>go提供了一个读取库encoding package main import ( "encoding/csv" "log" "os" ) //go语言读写csv文件 func main() { //创建一个io对象 filename:="Person1.csv" f := ReadCsv(filename) //WriterCSV(filename) } //csv文件读取 func ReadCsv(filepath string)</div><div class=post-footer>
-<a href=/posts/go/go-csv/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/go/>Go</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>

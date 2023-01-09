@@ -89,6 +89,18 @@
 </a><a href=/index.xml title=RSS target=_blank rel="external nofollow noopener noreffer me"><i class="fas fa-rss fa-fw"></i>
 </a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/go/%E5%AE%89%E8%A3%85/>go安装</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
+lyj</a></span>&nbsp;<span class=post-publish title="2021-10-21 18:52:55">发布于 <time datetime=2021-10-21>2021-10-21</time></span></div><div class=content>GOVER=1.17.2 wget golang.google.cn/dl/go${GOVER}.linux-amd64.tar.gz tar -xzf go${GOVER}.linux-amd64.tar.gz mv ./go /usr/local/go echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile source /etc/profile rm golang.google.cn/dl/go${GOVER}.linux-amd64.tar.gz #腾讯外网 go env -w GOPROXY=https://mirrors.cloud.tencent.com/go/ #腾讯内网 go env -w GOPROXY=http://mirrors.tencentyun.com/go/ #七牛镜像 go env -w GOPROXY=https://goproxy.cn,direct export GOPROXY=http://mirrors.tencentyun.com/go/</div><div class=post-footer>
+<a href=/posts/go/%E5%AE%89%E8%A3%85/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/go/>Go</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/go/%E8%AF%B7%E6%B1%82-http/>go请求http</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
+lyj</a></span>&nbsp;<span class=post-publish title="2021-10-21 18:52:55">发布于 <time datetime=2021-10-21>2021-10-21</time></span></div><div class=content>go提供了一个http包，可以通过这个包方便的进行http请求 import ( "fmt" "io/ioutil" "net/http" "strings" ) // http.Get func httpGet() { resp, err := http.Get("http://www.baidu.com") if err != nil { fmt.Println(err) return } defer resp.Body.Close() body, err := ioutil.ReadAll(resp.Body) fmt.Println(string(body)) } func httpPost() { resp, err := http.Post("http://www.baidu.com",</div><div class=post-footer>
+<a href=/posts/go/%E8%AF%B7%E6%B1%82-http/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/go/>Go</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/front/fetch/>webApi fetch使用</a>
 </h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
 lyj</a></span>&nbsp;<span class=post-publish title="2021-10-21 18:52:55">发布于 <time datetime=2021-10-21>2021-10-21</time></span></div><div class=content>概述 fetch()的功能与 XMLHttpRequest 基本相同，但有三个主要的差异。 （1）fetch()使用 Promise，不使用回调函数，因此大大简化了写法，写起来</div><div class=post-footer>
@@ -111,17 +123,6 @@ lyj</a></span>&nbsp;<span class=post-publish title="2021-09-21 18:52:55">发布�
 lyj</a></span>&nbsp;<span class=post-publish title="2021-09-21 18:52:55">发布于 <time datetime=2021-09-21>2021-09-21</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/life/><i class="far fa-folder fa-fw"></i>&nbsp;life</a></span></div><div class=content>1.安装浏览器 点击下载 下载完成后安装 2.安装油猴 打开浏览器，跟图走 3.安装脚本 在此浏览器内打开 http://ti.fakev.cn/scripts 点击安装脚本 4.检查安装 打开 http://chaoxing.com 登录 打开一个课</div><div class=post-footer>
 <a href=/posts/cx/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E6%89%8B%E6%9C%BA%E7%89%88/>阅读全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%AD%A6%E4%B9%A0%E9%80%9A/>学习通</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/cx/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E7%94%B5%E8%84%91%E7%89%88/>学习通脚本安装（电脑版）</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span>&nbsp;<span class=post-publish title="2021-09-21 18:52:55">发布于 <time datetime=2021-09-21>2021-09-21</time></span>&nbsp;<span class=post-category>收录于 <a href=/categories/life/><i class="far fa-folder fa-fw"></i>&nbsp;life</a></span></div><div class=content>一、浏览器选择 推荐使用edge，如果是chrome要科网 二、安装油猴 打开 https://microsoftedge.microsoft.co</div><div class=post-footer>
-<a href=/posts/cx/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E7%94%B5%E8%84%91%E7%89%88/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%AD%A6%E4%B9%A0%E9%80%9A/>学习通</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/dotnet/csharp%E7%B1%BB%E5%9E%8B/></a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span>&nbsp;<span class=post-publish title="0001-01-01 00:00:00">发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content></div><div class=post-footer>
-<a href=/posts/dotnet/csharp%E7%B1%BB%E5%9E%8B/>阅读全文</a></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
