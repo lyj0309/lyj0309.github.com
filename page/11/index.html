@@ -89,6 +89,12 @@
 </a><a href=/index.xml title=RSS target=_blank rel="external nofollow noopener noreffer me"><i class="fas fa-rss fa-fw"></i>
 </a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/middleware/elastic/elastic%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8ik%E5%88%86%E8%AF%8D%E5%99%A8/>Elasticsearch8.0安装及使用ik分词器</a>
+</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
+lyj</a></span>&nbsp;<span class=post-publish title="2022-02-18 01:47:53">发布于 <time datetime=2022-02-18>2022-02-18</time></span></div><div class=content>es安装 esver=8.0.0 # 设置系统内存 sudo sysctl -w vm.max_map_count=262144 # docker pull elasticsearch:$esver docker run --name es --net elastic -p 9200:9200 -p 9300:9300 -it docker.elastic.co/elasticsearch/elasticsearch:8.0.0 es就启动了 访问https://ip:9200就能看到，是需要密码的，密码可</div><div class=post-footer>
+<a href=/posts/middleware/elastic/elastic%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8ik%E5%88%86%E8%AF%8D%E5%99%A8/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/elastic/>elastic</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/front/npm%E5%92%8Cyarn%E6%8D%A2%E6%BA%90/>Npm和yarn换源</a>
 </h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
 lyj</a></span>&nbsp;<span class=post-publish title="2022-02-15 01:35:29">发布于 <time datetime=2022-02-15>2022-02-15</time></span></div><div class=content>yarn // 查询源 yarn config get registry // 更换国内源 yarn config set registry https://registry.npm.taobao.org/ // 恢复官方源 yarn config set registry https://registry.yarnpkg.com // 删除注册表 yarn config delete registry npm 注意 npm 更换国内镜像源之后，将无法再使用 npm search 命令，需要恢复</div><div class=post-footer>
@@ -116,11 +122,6 @@ lyj</a></span>&nbsp;<span class=post-publish title="2022-02-11 16:53:15">发布�
 </h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
 lyj</a></span>&nbsp;<span class=post-publish title="2022-02-10 17:47:32">发布于 <time datetime=2022-02-10>2022-02-10</time></span></div><div class=content>//459. 重复的子字符串 func repeatedSubstringPattern(s string) bool { l := len(s) for i := 1; i &lt;= l/2; i++ { if l%i == 0 { subs := s[:i] t := true for k := 0; k &lt; l/i; k++ { if s[k*i:k*i+i] != subs { t = false break } } if t { return true } } } return false } //1447. 最简</div><div class=post-footer>
 <a href=/posts/go/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98/>阅读全文</a></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/hugo%E4%BD%BF%E7%94%A8%E6%B7%BB%E5%8A%A0algolia%E6%90%9C%E7%B4%A2/>Hugo使用添加algolia搜索</a>
-</h1><div class=post-meta><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span>&nbsp;<span class=post-publish title="2022-02-09 21:09:59">发布于 <time datetime=2022-02-09>2022-02-09</time></span></div><div class=content>前言 想把博客作为自己的笔记，用过有道云笔记和onenote，hugo美中不足的地方就是搜索不了笔记，直到后面我发现其实是可以搜索的，搜索方式</div><div class=post-footer>
-<a href=/posts/hugo%E4%BD%BF%E7%94%A8%E6%B7%BB%E5%8A%A0algolia%E6%90%9C%E7%B4%A2/>阅读全文</a></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
