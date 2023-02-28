@@ -4,3 +4,4 @@ local
 resources
 # Local Netlify folder
 .netlify
+.vercel
