@@ -3,82 +3,76 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>Linux基本命令 - FAKEV</title><meta name=author content="lyj: https://github.com/lyj0309">
-<meta name=description content="文本操作 cat 查看文件 cat filename 写入文件 cat >> filename << EOF #EOF是标记符，写什么无所谓，但EOF为大家默认 > hahaha > hehehe EOF #再次输入标记符表示结束，如果最初的标记">
-<meta name=keywords content="FAKEV,go,lyj"><meta itemprop=name content="Linux基本命令">
-<meta itemprop=description content="文本操作 cat 查看文件 cat filename 写入文件 cat >> filename << EOF #EOF是标记符，写什么无所谓，但EOF为大家默认 > hahaha > hehehe EOF #再次输入标记符表示结束，如果最初的标记"><meta itemprop=datePublished content="2022-02-18T02:32:27+08:00">
-<meta itemprop=dateModified content="2022-02-18T02:32:27+08:00">
-<meta itemprop=wordCount content="2930">
-<meta itemprop=keywords content><meta property="og:title" content="Linux基本命令">
-<meta property="og:description" content="文本操作 cat 查看文件 cat filename 写入文件 cat >> filename << EOF #EOF是标记符，写什么无所谓，但EOF为大家默认 > hahaha > hehehe EOF #再次输入标记符表示结束，如果最初的标记">
+<title>Linux基本命令 - FAKEV</title><meta name=Description content="技术博客分享站"><meta property="og:title" content="Linux基本命令">
+<meta property="og:description" content="文本操作cat查看文件 cat filename 写入文件 cat >> filename << EOF #EOF是标记符，写什么无所谓，但EOF为大家默认 > hahaha > hehehe EOF #再次输入标记符表示结束，如果最初的">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://fakev.cn/posts/draft/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2022-02-18T02:32:27+08:00">
 <meta property="article:modified_time" content="2022-02-18T02:32:27+08:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Linux基本命令">
-<meta name=twitter:description content="文本操作 cat 查看文件 cat filename 写入文件 cat >> filename << EOF #EOF是标记符，写什么无所谓，但EOF为大家默认 > hahaha > hehehe EOF #再次输入标记符表示结束，如果最初的标记">
+<meta name=twitter:description content="文本操作cat查看文件 cat filename 写入文件 cat >> filename << EOF #EOF是标记符，写什么无所谓，但EOF为大家默认 > hahaha > hehehe EOF #再次输入标记符表示结束，如果最初的">
 <meta name=application-name content="FAKEV">
-<meta name=apple-mobile-web-app-title content="FAKEV"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta name=apple-mobile-web-app-title content="FAKEV">
+<meta name=theme-color content="#f8f8f8"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/posts/draft/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/><link rel=prev href=https://fakev.cn/posts/middleware/elastic/kibana%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/><link rel=next href=https://fakev.cn/posts/go/go-csv/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux基本命令","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/fakev.cn\/posts\/draft\/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4\/"},"genre":"posts","wordcount":2930,"url":"https:\/\/fakev.cn\/posts\/draft\/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4\/","datePublished":"2022-02-18T02:32:27+08:00","dateModified":"2022-02-18T02:32:27+08:00","publisher":{"@type":"Organization","name":"lyj"},"author":{"@type":"Person","name":"lyj"},"description":""}</script></head>
-<body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/posts/draft/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/><link rel=prev href=https://fakev.cn/posts/middleware/elastic/kibana%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/><link rel=next href=https://fakev.cn/posts/go/go-csv/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/color.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
+<noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
+<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux基本命令","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/fakev.cn\/posts\/draft\/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4\/"},"genre":"posts","wordcount":2965,"url":"https:\/\/fakev.cn\/posts\/draft\/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4\/","datePublished":"2022-02-18T02:32:27+08:00","dateModified":"2022-02-18T02:32:27+08:00","publisher":{"@type":"Organization","name":"lyj"},"author":{"@type":"Person","name":"lyj"},"description":""}</script><script src=//instant.page/5.1.1 defer type=module integrity=sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq></script>
+</head>
+<body header-desktop header-mobile><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a),document.documentElement.style.setProperty('color-scheme',a==='light'?'light':'dark'),window.theme=a}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let metaColors={light:'#f8f8f8',dark:'#252627',black:'#000000'};getMeta('theme-color').content=metaColors[document.body.getAttribute('theme')]</script>
+<div id=back-to-top></div>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
 <div class=header-title>
-<a href=/ title=FAKEV><span class=header-title-text>FAKEV</span></a></div>
-<nav>
-<ul class=menu><li class=menu-item>
-<a class=menu-link href=/posts/>所有文章</a></li><li class=menu-item>
-<a class=menu-link href=/tags/>标签</a></li><li class=menu-item>
-<a class=menu-link href=/categories/>分类</a></li><li class=menu-item>
-<a class=menu-link href=/about/>关于</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id=search-desktop>
-<input type=text placeholder="搜索文章标题或内容 ..." id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
+<a href=/ title=FAKEV>FAKEV</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> 所有文章 </a><a class=menu-item href=/tags/> 标签 </a><a class=menu-item href=/categories/> 分类 </a><a class=menu-item href=/about/> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=# class="search-button search-toggle" id=search-toggle-desktop title=搜索>
 <i class="fas fa-search fa-fw"></i>
 </a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空>
+<a href=# class="search-button search-clear" id=search-clear-desktop title=清空>
 <i class="fas fa-times-circle fa-fw"></i>
 </a>
 <span class="search-button search-loading" id=search-loading-desktop>
 <i class="fas fa-spinner fa-fw fa-spin"></i>
 </span>
-</li><li class="menu-item theme-switch" title=切换主题>
+</span><a href=# class="menu-item theme-switch" title=切换主题>
 <i class="fas fa-adjust fa-fw"></i>
-</li>
-</ul>
-</nav><a href=https://github.com/lyj0309 title="Follow me on GitHub" target=_blank rel="external nofollow noopener noreffer" class=github-corner><svg width="56" height="56" viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115h15l12 27L250 250V0z"/><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentcolor" style="transform-origin:130px 106px" class="octo-arm"/><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4l13.9-13.8C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8z" fill="currentcolor" class="octo-body"/></svg></a></div>
+</a></div>
+</div>
+</div>
 </header><header class=mobile id=header-mobile>
 <div class=header-container>
 <div class=header-wrapper>
 <div class=header-title>
-<a href=/ title=FAKEV><span class=header-title-text>FAKEV</span></a></div>
+<a href=/ title=FAKEV>FAKEV</a>
+</div>
 <div class=menu-toggle id=menu-toggle-mobile>
 <span></span><span></span><span></span>
 </div>
 </div>
-<nav>
-<ul class=menu id=menu-mobile><li class=search-wrapper>
+<div class=menu id=menu-mobile><div class=search-wrapper>
 <div class="search mobile" id=search-mobile>
-<input type=text placeholder="搜索文章标题或内容 ..." id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=# class="search-button search-toggle" id=search-toggle-mobile title=搜索>
 <i class="fas fa-search fa-fw"></i>
 </a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空>
+<a href=# class="search-button search-clear" id=search-clear-mobile title=清空>
 <i class="fas fa-times-circle fa-fw"></i>
 </a>
 <span class="search-button search-loading" id=search-loading-mobile>
 <i class="fas fa-spinner fa-fw fa-spin"></i>
 </span>
 </div>
-<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+<a href=# class=search-cancel id=search-cancel-mobile>
 取消
 </a>
-</li><li class=menu-item><a class=menu-link href=/posts/>所有文章</a></li><li class=menu-item><a class=menu-link href=/tags/>标签</a></li><li class=menu-item><a class=menu-link href=/categories/>分类</a></li><li class=menu-item><a class=menu-link href=/about/>关于</a></li><li class="menu-item theme-switch" title=切换主题>
+</div><a class=menu-item href=/posts/ title>所有文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/about/ title>关于</a><a href=# class="menu-item theme-switch" title=切换主题>
 <i class="fas fa-adjust fa-fw"></i>
-</li></ul>
-</nav>
+</a></div>
 </div>
 </header>
 <div class="search-dropdown desktop">
@@ -87,20 +81,16 @@
 <div class="search-dropdown mobile">
 <div id=search-dropdown-mobile></div>
 </div>
-<main class=container page-style=normal><aside class=toc id=toc-auto><h2 class=toc-title>目录</h2>
-<div class=toc-content id=toc-content-auto></div></aside>
-<aside class=aside-custom>
-</aside>
-<article class="page single"><h1 class="single-title animate__animated animate__flipInX">Linux基本命令</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://github.com/lyj0309 title=Author target=_blank rel="external nofollow noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>
-lyj</a></span></div>
-<div class=post-meta-line><span title="2022-02-18 02:32:27">
-<i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-02-18>2022-02-18</time>
-</span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2930 字&nbsp;
+<main class=main>
+<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Linux基本命令</h1><div class=post-meta>
+<div class=post-meta-line>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-02-18>2022-02-18</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2022-02-18>2022-02-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2965 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 6 分钟&nbsp;<span id=/posts/draft/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/ class=leancloud_visitors data-flag-title=Linux基本命令>
-<i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count>-</span>&nbsp;次阅读
+<i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
 </span>&nbsp;</div>
-</div><div class="details toc" id=toc-static kept=false>
+</div><div class="details toc" id=toc-static kept>
 <div class="details-summary toc-title">
 <span>目录</span>
 <span><i class="details-icon fas fa-angle-right"></i></span>
@@ -141,9 +131,9 @@ lyj</a></span></div>
 </li>
 </ul>
 </nav></div>
-</div><div class=content id=content><h1 id=文本操作>文本操作</h1>
-<h2 id=cat>cat</h2>
-<p>查看文件
+</div><div class=content id=content><h1 id=文本操作 class=headerLink>
+<a href=#%e6%96%87%e6%9c%ac%e6%93%8d%e4%bd%9c class=header-mark></a>文本操作</h1><h2 id=cat class=headerLink>
+<a href=#cat class=header-mark></a>cat</h2><p>查看文件
 cat filename</p>
 <p>写入文件</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>cat &gt;&gt; filename <span class=s>&lt;&lt; EOF #EOF</span>是标记符，写什么无所谓，但EOF为大家默认
@@ -159,22 +149,22 @@ EOF  <span class=c1>#再次输入标记符表示结束，如果最初的标记�
 </span><span class=s>222
 </span><span class=s>333
 </span><span class=s>EOF</span>
-</code></pre></div><h2 id=grep>grep</h2>
-<p>　　Linux系统中grep命令是一种强大的文本搜索工具，它能使用<strong>正则表达式</strong>搜索文本，并把匹配的行打印出来（匹配到的标红）。grep全称是Global Regular Expression Print，表示全局正则表达式版本，它的使用权限是所有用户。</p>
+</code></pre></div><h2 id=grep class=headerLink>
+<a href=#grep class=header-mark></a>grep</h2><p>　　Linux系统中grep命令是一种强大的文本搜索工具，它能使用<strong>正则表达式</strong>搜索文本，并把匹配的行打印出来（匹配到的标红）。grep全称是Global Regular Expression Print，表示全局正则表达式版本，它的使用权限是所有用户。</p>
 <p>　　grep的工作方式是这样的，它在一个或多个文件中搜索字符串模板。如果模板包括空格，则必须被引用，模板后的所有字符串被看作文件名。搜索的结果被送到标准输出，不影响原文件内容。</p>
 <p>　　grep可用于shell脚本，因为grep通过返回一个状态值来说明搜索的状态，如果模板搜索成功，则返回0，如果搜索不成功，则返回1，如果搜索的文件不存在，则返回2。我们利用这些返回值就可进行一些自动化的文本处理工作。</p>
 <p><strong>egrep = grep -E：扩展的正则表达式</strong> （除了 <strong>\&lt;</strong> , <strong>\></strong> , <strong>\b</strong> 使用其他正则都可以去掉\）</p>
-<h2 id=sed>sed</h2>
-<h3 id=31-认识sed><strong>3.1 认识sed</strong></h3>
-<p>　　sed 是一种流编辑器，它一次处理一<strong>行</strong>内容。处理时，把当前处理的行存储在临时缓冲区中，称为“<strong>模式空间</strong>”（patternspace ），接着用sed 命令处理缓冲区中的内容，处理完成后，把缓冲区的内容送往屏幕。然后读入下行，执行下一个循环。如果没有使诸如‘D’ 的特殊命令，那会在两个循环之间清空模式空间，但不会清空<strong>保留空间</strong>。这样不断重复，直到文件末尾。<strong>文件内容并没有改变</strong>，除非你使用<strong>重定向存储输出或-i</strong>。</p>
+<h2 id=sed class=headerLink>
+<a href=#sed class=header-mark></a>sed</h2><h3 id=31-认识sed class=headerLink>
+<a href=#31-%e8%ae%a4%e8%af%86sed class=header-mark></a><strong>3.1 认识sed</strong></h3><p>　　sed 是一种流编辑器，它一次处理一<strong>行</strong>内容。处理时，把当前处理的行存储在临时缓冲区中，称为“<strong>模式空间</strong>”（patternspace ），接着用sed 命令处理缓冲区中的内容，处理完成后，把缓冲区的内容送往屏幕。然后读入下行，执行下一个循环。如果没有使诸如‘D’ 的特殊命令，那会在两个循环之间清空模式空间，但不会清空<strong>保留空间</strong>。这样不断重复，直到文件末尾。<strong>文件内容并没有改变</strong>，除非你使用<strong>重定向存储输出或-i</strong>。</p>
 <p>　　功能：主要用来自动编辑一个或多个文件, 简化对文件的反复操作</p>
 <p> </p>
-<h3 id=32-使用sed><strong>3.2 使用sed</strong></h3>
-<h4 id=321-命令格式><strong>3.2.1 命令格式</strong></h4>
-<p>sed [options] &lsquo;[地址定界] command&rsquo; file(s)</p>
+<h3 id=32-使用sed class=headerLink>
+<a href=#32-%e4%bd%bf%e7%94%a8sed class=header-mark></a><strong>3.2 使用sed</strong></h3><h4 id=321-命令格式 class=headerLink>
+<a href=#321-%e5%91%bd%e4%bb%a4%e6%a0%bc%e5%bc%8f class=header-mark></a><strong>3.2.1 命令格式</strong></h4><p>sed [options] &lsquo;[地址定界] command&rsquo; file(s)</p>
 <p>　　</p>
-<h4 id=322-常用选项options><strong>3.2.2 常用选项options</strong></h4>
-<ul>
+<h4 id=322-常用选项options class=headerLink>
+<a href=#322-%e5%b8%b8%e7%94%a8%e9%80%89%e9%a1%b9options class=header-mark></a><strong>3.2.2 常用选项options</strong></h4><ul>
 <li> <strong>-n</strong>：不输出模式空间内容到屏幕，即不自动打印，只打印匹配到的行</li>
 <li> **-e：**多点编辑，对每行处理时，可以有多个Script</li>
 <li> <strong>-f</strong>：把Script写到文件当中，在执行sed时-f 指定文件路径，如果是多个Script，换行写</li>
@@ -183,8 +173,8 @@ EOF  <span class=c1>#再次输入标记符表示结束，如果最初的标记�
 <li> <strong>-i.bak</strong>：在将处理的结果写入文件之前备份一份</li>
 </ul>
 <p> </p>
-<h4 id=323-地址定界><strong>3.2.3 地址定界</strong></h4>
-<ul>
+<h4 id=323-地址定界 class=headerLink>
+<a href=#323-%e5%9c%b0%e5%9d%80%e5%ae%9a%e7%95%8c class=header-mark></a><strong>3.2.3 地址定界</strong></h4><ul>
 <li> 不给地址：对全文进行处理</li>
 <li> 单地址：
 <ul>
@@ -208,8 +198,8 @@ EOF  <span class=c1>#再次输入标记符表示结束，如果最初的标记�
 </li>
 </ul>
 <p> </p>
-<h4 id=324-编辑命令command><strong>3.2.4 编辑命令command</strong></h4>
-<ul>
+<h4 id=324-编辑命令command class=headerLink>
+<a href=#324-%e7%bc%96%e8%be%91%e5%91%bd%e4%bb%a4command class=header-mark></a><strong>3.2.4 编辑命令command</strong></h4><ul>
 <li> <strong>d：删除</strong>模式空间匹配的行，并立即启用下一轮循环</li>
 <li> <strong>p：打印</strong>当前模式空间内容，追加到默认输出之后</li>
 <li> <strong>a</strong>：在指定行<strong>后面追加</strong>文本，支持使用\n实现多行追加</li>
@@ -231,8 +221,8 @@ EOF  <span class=c1>#再次输入标记符表示结束，如果最初的标记�
 </ul>
 </li>
 </ul>
-<h3 id=实例>实例</h3>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-cmd data-lang=cmd>[root@along ~]# cat demo
+<h3 id=实例 class=headerLink>
+<a href=#%e5%ae%9e%e4%be%8b class=header-mark></a>实例</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-cmd data-lang=cmd>[root@along ~]# cat demo
 aaa
 bbbb
 AABBCCDD
@@ -317,25 +307,25 @@ AABBCCDD
 AAA
 BBBB
 AABBCCDD
-</code></pre></div><h2 id=awk>awk</h2>
-<h1 id=杂项>杂项</h1>
-<h2 id=环境变量>环境变量</h2>
-<p>主要有两种环境变量，一种是含<code>PATH</code>的环境变量，一种则直接是键值对</p>
+</code></pre></div><h2 id=awk class=headerLink>
+<a href=#awk class=header-mark></a>awk</h2><h1 id=杂项 class=headerLink>
+<a href=#%e6%9d%82%e9%a1%b9 class=header-mark></a>杂项</h1><h2 id=环境变量 class=headerLink>
+<a href=#%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f class=header-mark></a>环境变量</h2><p>主要有两种环境变量，一种是含<code>PATH</code>的环境变量，一种则直接是键值对</p>
 <p>含<code>PATH</code>的环境变量一般用于软件的导入，比如导入一个文件夹下面所有文件然后可以直接通过命令行访问，比如把<code>mingw/src</code>文件夹导入从而可以使用gcc</p>
 <p>键值对环境变量则可以用来进行配置的读取，如<code>NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node</code>这个环境变量，则是告诉node使用淘宝镜像，就如同全局变量</p>
-<h3 id=读取环境变量>读取环境变量</h3>
-<ul>
+<h3 id=读取环境变量 class=headerLink>
+<a href=#%e8%af%bb%e5%8f%96%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f class=header-mark></a>读取环境变量</h3><ul>
 <li>export命令显示当前系统定义的所有环境变量</li>
 <li>echo $PATH命令输出当前的PATH环境变量的值</li>
 </ul>
-<h3 id=配置环境变量>配置环境变量</h3>
-<h4 id=临时变量当前命令行有用>临时变量（当前命令行有用）</h4>
-<p><code>PATH</code>变量 ：使用export命令直接修改PATH的值，配置MySQL进入环境变量的方法:
+<h3 id=配置环境变量 class=headerLink>
+<a href=#%e9%85%8d%e7%bd%ae%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f class=header-mark></a>配置环境变量</h3><h4 id=临时变量当前命令行有用 class=headerLink>
+<a href=#%e4%b8%b4%e6%97%b6%e5%8f%98%e9%87%8f%e5%bd%93%e5%89%8d%e5%91%bd%e4%bb%a4%e8%a1%8c%e6%9c%89%e7%94%a8 class=header-mark></a>临时变量（当前命令行有用）</h4><p><code>PATH</code>变量 ：使用export命令直接修改PATH的值，配置MySQL进入环境变量的方法:
 <code>export PATH=/home/uusama/mysql/bin:$PATH</code></p>
 <p>非<code>PATH</code>变量：
 export GO_VERSION=1.17.6</p>
-<h4 id=永久变量>永久变量</h4>
-<p>主要是修改配置文件的方式
+<h4 id=永久变量 class=headerLink>
+<a href=#%e6%b0%b8%e4%b9%85%e5%8f%98%e9%87%8f class=header-mark></a>永久变量</h4><p>主要是修改配置文件的方式
 一共有四个文件，修改方式则是把设置临时变量的句子加到文件中</p>
 <ul>
 <li>
@@ -351,9 +341,11 @@ export GO_VERSION=1.17.6</p>
 <p>~/.bash_profile:每个用户都可使用该文件输入专用于自己使用的shell信息,当用户登录时,该文件仅仅执行一次!默认情况下,他设置一些环境变量,执行用户的.bashrc文件.</p>
 </li>
 </ul>
-<p><img class=lazyload src=/svg/loading.min.svg data-src=https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg data-srcset="https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg, https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg 1.5x, https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg 2x" data-sizes=auto alt=https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg title=image.png></p>
-<h2 id=swap>swap</h2>
-<p>创建一个swap文件,大小2G，count代表大小。</p>
+<p><figure><a class=lightgallery href=https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg title=image.png data-thumbnail=https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg>
+<img loading=lazy src=https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg srcset="https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg, https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg 1.5x, https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg 2x" sizes=auto alt=https://tva1.sinaimg.cn/large/0077qBLugy1gzk53fy148j30gr0addii.jpg>
+</a></figure></p>
+<h2 id=swap class=headerLink>
+<a href=#swap class=header-mark></a>swap</h2><p>创建一个swap文件,大小2G，count代表大小。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=nb>cd</span> /var
 sudo dd <span class=k>if</span><span class=o>=</span>/dev/zero <span class=nv>of</span><span class=o>=</span>swapfile <span class=nv>bs</span><span class=o>=</span><span class=m>1024</span> <span class=nv>count</span><span class=o>=</span><span class=m>2000000</span>
 
@@ -370,39 +362,41 @@ sudo swapon /var/swapfile
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>cat <span class=s>&lt;&lt; EOF &gt; /etc/fstab
 </span><span class=s>/var/swapfile   swap  swap  defaults  0  0
 </span><span class=s>EOF</span>
-</code></pre></div><h2 id=压缩>压缩</h2>
-<h3 id=zip>zip</h3>
-<p>将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：
+</code></pre></div><h2 id=压缩 class=headerLink>
+<a href=#%e5%8e%8b%e7%bc%a9 class=header-mark></a>压缩</h2><h3 id=zip class=headerLink>
+<a href=#zip class=header-mark></a>zip</h3><p>将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：
 <code>zip -q -r html.zip /home/html</code></p>
 <p><code>zip *</code>就可以压缩当前文件夹了，与别的命令有点不同，这个命令不能识别<code>./</code>或<code>.</code>必须要<code>*</code></p>
-<h3 id=tar>tar</h3>
-<p>压缩 a.c文件为test.tar.gz</p>
+<h3 id=tar class=headerLink>
+<a href=#tar class=header-mark></a>tar</h3><p>压缩 a.c文件为test.tar.gz</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>touch a.c       
 tar -czvf test.tar.gz a.c   
 <span class=c1># a.c</span>
 </code></pre></div><p>解压文件</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>tar -xzvf test.tar.gz 
 <span class=c1>#a.c</span>
-</code></pre></div><h2 id=监控>监控</h2>
-<h3 id=查看网络流量>查看网络流量</h3>
-<p>nload</p>
-<h3 id=任务管理器>任务管理器</h3>
-<p>top htop</p>
-<h3 id=查看端口占用>查看端口占用</h3>
-<p><code>lsof -i:端口号</code>
+</code></pre></div><h2 id=监控 class=headerLink>
+<a href=#%e7%9b%91%e6%8e%a7 class=header-mark></a>监控</h2><h3 id=查看网络流量 class=headerLink>
+<a href=#%e6%9f%a5%e7%9c%8b%e7%bd%91%e7%bb%9c%e6%b5%81%e9%87%8f class=header-mark></a>查看网络流量</h3><p>nload</p>
+<h3 id=任务管理器 class=headerLink>
+<a href=#%e4%bb%bb%e5%8a%a1%e7%ae%a1%e7%90%86%e5%99%a8 class=header-mark></a>任务管理器</h3><p>top htop</p>
+<h3 id=查看端口占用 class=headerLink>
+<a href=#%e6%9f%a5%e7%9c%8b%e7%ab%af%e5%8f%a3%e5%8d%a0%e7%94%a8 class=header-mark></a>查看端口占用</h3><p><code>lsof -i:端口号</code>
 netstat -ntlp //查看当前所有tcp端口</p>
 <p>netstat -ntulp | grep 80 //查看所有80端口使用情况</p>
 <p>netstat -ntulp | grep 3306 //查看所有3306端口使用情况</p>
-</div><div class=post-footer id=post-footer>
+</div>
+<div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span title="2022-02-18 02:32:27">更新于 2022-02-18</span>
+<span>更新于 2022-02-18</span>
 </div>
 <div class=post-info-license></div>
 </div>
 <div class=post-info-line>
-<div class=post-info-md><span><a href=/posts/draft/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/index.md title=阅读原始文档 class=link-to-markdown>阅读原始文档</a></span></div>
+<div class=post-info-md><span><a class=link-to-mardown href=/posts/draft/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/index.md target=_blank rel="noopener noreferrer">阅读原始文档</a>
+</span></div>
 <div class=post-info-share>
 <span></span>
 </div>
@@ -418,17 +412,23 @@ netstat -ntlp //查看当前所有tcp端口</p>
 <a href=/posts/go/go-csv/ class=next rel=next title="Go Csv">Go Csv<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
-Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/ rel="external nofollow noopener noreffer">Valine</a>.
-</noscript></div></article></main><footer class=footer>
-<div class=footer-container><div class="footer-line powered">由 <a href=https://gohugo.io/ target=_blank rel="external nofollow noopener noreffer" title="Hugo 0.91.2">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/Lruihao/FixIt target=_blank rel="external nofollow noopener noreffer" title="FixIt 0.2.14"><img class=fixit-icon src=/images/fixit.svg alt="FixIt logo">&nbsp;FixIt</a>
-</div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i>
-<span itemprop=copyrightYear>2020 - 2023</span><span class=author itemprop=copyrightHolder>
-<a href=https://github.com/lyj0309 target=_blank rel="external nofollow noopener noreffer">lyj</a></span><span class=footer-divider></span><span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div><div class=footer-line><span class=icp><a class=theme-link href=https://beian.miit.gov.cn>桂ICP备20003848号</a></span></div></div>
-</footer></div>
-<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部>
+Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
+</noscript></div></article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>
+由 <a href=https://gohugo.io/ target=_blank rel="noopener noreferrer" title="Hugo 0.91.2">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href=https://github.com/HEIGE-PCloud/DoIt target=_blank rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2020 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/lyj0309 target=_blank rel="noopener noreferrer">lyj</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span><span class=icp-splitter>&nbsp;|&nbsp;</span><br class=icp-br>
+<span class=icp><a class=theme-link href=https://beian.miit.gov.cn>桂ICP备20003848号</a></span></div>
+<div class=footer-line></div>
+<div class=footer-line>
+</div>
+</div></footer></div>
+<div id=fixed-buttons><a href=#back-to-top id=back-to-top-button class=fixed-button title=回到顶部>
 <i class="fas fa-arrow-up fa-fw"></i>
 </a><a href=# id=view-comments class=fixed-button title=查看评论>
 <i class="fas fa-comment fa-fw"></i>
 </a>
-</div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/valine/Valine.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js defer></script><script type=text/javascript src=/lib/algoliasearch/algoliasearch-lite.umd.min.js defer></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js async defer></script><script type=text/javascript src=/lib/katex/katex.min.js defer></script><script type=text/javascript src=/lib/katex/auto-render.min.js defer></script><script type=text/javascript src=/lib/katex/copy-tex.min.js defer></script><script type=text/javascript src=/lib/katex/mhchem.min.js defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",editLockTitle:"锁定可编辑代码块",editUnLockTitle:"解锁可编辑代码块",editable:!0,maxShownLines:10},comment:{valine:{appId:"xp0QpOaiSAHWtssGMmuQsDK2-gzGzoHsz",appKey:"0jJ0r2V5ATEHonjSfXoY4Swn",avatar:"mp",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!1,highlight:!0,lang:"zh-cn",pageSize:10,placeholder:"说点什么吧...",recordIP:!0,visitor:!0}},cookieconsent:{content:{dismiss:"同意",endlevel:6,link:"了解更多",message:"本网站使用 Cookies 来改善您的浏览体验。"},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},enablePWA:null,math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{algoliaAppID:"2JCAO8XQY2",algoliaIndex:"blog",algoliaSearchKey:"fd39521e89aef7cc0d57626786cf0644",highlightTag:"em",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"algolia"}}</script><script type=text/javascript src=/js/theme.min.js defer></script></body>
+</div><div id=cookieconsent-container></div><div class=assets><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/katex/copy-tex.min.css>
+<noscript><link rel=stylesheet href=/lib/katex/copy-tex.min.css></noscript><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:10},comment:{valine:{appId:"xp0QpOaiSAHWtssGMmuQsDK2-gzGzoHsz",appKey:"0jJ0r2V5ATEHonjSfXoY4Swn",avatar:"mp",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!1,highlight:!0,lang:"zh-cn",pageSize:10,placeholder:"说点什么吧...",recordIP:!0,visitor:!0}},cookieconsent:{content:{dismiss:"同意",endlevel:6,link:"了解更多",message:"本网站使用 Cookies 来改善您的浏览体验."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{algoliaAppID:"2JCAO8XQY2",algoliaIndex:"blog",algoliaSearchKey:"fd39521e89aef7cc0d57626786cf0644",highlightTag:"em",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"algolia"}}</script><script type=text/javascript src=/lib/valine/Valine.min.js defer></script><script type=text/javascript src=/js/valine.min.js defer></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js defer></script><script type=text/javascript src=/lib/katex/auto-render.min.js defer></script><script type=text/javascript src=/lib/katex/copy-tex.min.js defer></script><script type=text/javascript src=/lib/katex/mhchem.min.js defer></script><script type=text/javascript src=/js/katex.min.js defer></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js defer></script><script type=text/javascript src=/js/cookieconsent.min.js defer></script><script type=text/javascript src=/js/theme.min.js defer></script></div>
+</body>
 </html>
