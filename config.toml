@@ -9,7 +9,7 @@ hasCJKLanguage = true
 title = 'FAKEV'
 
 # 更改使用 Hugo 构建网站时使用的默认主题
-theme = "FixIt"
+theme = "DoIt"
 
 ## 挂载图片
 [[module.mounts]]
