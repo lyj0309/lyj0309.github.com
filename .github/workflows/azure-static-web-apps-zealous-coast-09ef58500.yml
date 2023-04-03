@@ -41,6 +41,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env:
           HUGO_VERSION: 0.92.1
+          RUN_BUILD_COMMAND: hogo -e
   
           
   close_pull_request_job:
