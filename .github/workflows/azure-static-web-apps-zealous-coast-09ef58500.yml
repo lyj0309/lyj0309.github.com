@@ -22,6 +22,7 @@ jobs:
           submodules: true
           
       - run: |
+          ls
           rm package.json
           echo ${{ secrets.SUBSCRIBE }} > ./static/${{ secrets.SUBSCRIBE_ID }}.txt
           
