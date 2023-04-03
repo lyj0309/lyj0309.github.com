@@ -22,8 +22,8 @@ jobs:
           submodules: true
           
       - run: |
-          # ls
           rm package.json
+          ls
           # echo ${{ secrets.SUBSCRIBE }} > ./static/${{ secrets.SUBSCRIBE_ID }}.txt
           
       - name: Build And Deploy
