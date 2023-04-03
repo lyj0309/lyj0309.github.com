@@ -23,6 +23,7 @@ jobs:
           
       - run: |
           rm package.json
+          rm package-lock.json
           ls
           # echo ${{ secrets.SUBSCRIBE }} > ./static/${{ secrets.SUBSCRIBE_ID }}.txt
           
