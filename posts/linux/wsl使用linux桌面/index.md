@@ -17,7 +17,7 @@ wsl --upgrade
 
 ## 确认wsl版本
 `wsl -l -v`
-![](/assets/images/2023-04-06-09-41-11.png)
+![](/images/2023-04-06-09-41-11.png)
 确保version是2
 
 ## 换源
@@ -38,13 +38,13 @@ systemd=true
 `tasksel`
 
 安装 debian desktop env和xfce就好
-![图 4](/assets/images/0be48f14e8ef2a9002796099987c2e7fb81c88ab2f48c61c81067d2987e30185.png)  
+![图 4](/images/0be48f14e8ef2a9002796099987c2e7fb81c88ab2f48c61c81067d2987e30185.png)  
 
 ## 运行
 ### 两种方式，一是和windows融合，很装x，不知道为啥一定要sudo才能运行
 `sudo startxfce4`
 
-![图 5](/assets/images/d12607dba025b99a03cf1d119ef9e73280ea9fd069d8cee47b493fbcc9afb4ff.png)  
+![图 5](/images/d12607dba025b99a03cf1d119ef9e73280ea9fd069d8cee47b493fbcc9afb4ff.png)  
 会发现有一个linux的任务栏和linux的导航栏，直接融合在windows里面了
 
 ### 二是新建一个桌面
@@ -60,7 +60,7 @@ kill $xw_pid
 `./start.sh`
 
 
-![图 6](/assets/images/2876f5da2d28168f82b8ea971ab03b0671bdd5189843c57885f7e5942c2f111c.png)  
+![图 6](/images/2876f5da2d28168f82b8ea971ab03b0671bdd5189843c57885f7e5942c2f111c.png)  
 
 ## 中文乱码
 https://blog.csdn.net/weixin_41714373/article/details/119519589
