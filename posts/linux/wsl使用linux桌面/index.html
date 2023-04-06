@@ -3,20 +3,20 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<title>ASP.NET Core入门 - FAKEV</title><meta name=Description content="技术博客分享站"><meta property="og:title" content="ASP.NET Core入门">
-<meta property="og:description" content="依赖注入的声明周期（设计模式）https://www.cnblogs.com/huangxincheng/p/13594386.html 依赖">
+<title> - FAKEV</title><meta name=Description content="技术博客分享站"><meta property="og:title" content>
+<meta property="og:description" content="wsl使用linux桌面,guilinux课说需要用gui，本来说用vmware，但windows有自带的为何不用呢 使用linux桌面有很多">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://fakev.cn/posts/dotnet/aspnetcore%E5%85%A5%E9%97%A8/"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://fakev.cn/posts/linux/wsl%E4%BD%BF%E7%94%A8linux%E6%A1%8C%E9%9D%A2/"><meta property="article:section" content="posts">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="ASP.NET Core入门">
-<meta name=twitter:description content="依赖注入的声明周期（设计模式）https://www.cnblogs.com/huangxincheng/p/13594386.html 依赖">
+<meta name=twitter:title content>
+<meta name=twitter:description content="wsl使用linux桌面,guilinux课说需要用gui，本来说用vmware，但windows有自带的为何不用呢 使用linux桌面有很多">
 <meta name=application-name content="FAKEV">
 <meta name=apple-mobile-web-app-title content="FAKEV">
 <meta name=theme-color content="#f8f8f8"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/posts/dotnet/aspnetcore%E5%85%A5%E9%97%A8/><link rel=prev href=https://fakev.cn/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E5%9C%A8%E7%BA%BFide/><link rel=next href=https://fakev.cn/posts/linux/wsl%E4%BD%BF%E7%94%A8linux%E6%A1%8C%E9%9D%A2/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/color.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/posts/linux/wsl%E4%BD%BF%E7%94%A8linux%E6%A1%8C%E9%9D%A2/><link rel=prev href=https://fakev.cn/posts/dotnet/aspnetcore%E5%85%A5%E9%97%A8/><link rel=next href=https://fakev.cn/posts/linux/tmux/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/color.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
 <noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
-<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"ASP.NET Core入门","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/fakev.cn\/posts\/dotnet\/aspnetcore%E5%85%A5%E9%97%A8\/"},"genre":"posts","wordcount":542,"url":"https:\/\/fakev.cn\/posts\/dotnet\/aspnetcore%E5%85%A5%E9%97%A8\/","publisher":{"@type":"Organization","name":"lyj"},"author":{"@type":"Person","name":"lyj"},"description":""}</script><script src=//instant.page/5.1.1 defer type=module integrity=sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq></script>
+<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/fakev.cn\/posts\/linux\/wsl%E4%BD%BF%E7%94%A8linux%E6%A1%8C%E9%9D%A2\/"},"genre":"posts","wordcount":527,"url":"https:\/\/fakev.cn\/posts\/linux\/wsl%E4%BD%BF%E7%94%A8linux%E6%A1%8C%E9%9D%A2\/","publisher":{"@type":"Organization","name":"lyj"},"author":{"@type":"Person","name":"lyj"},"description":""}</script><script src=//instant.page/5.1.1 defer type=module integrity=sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq></script>
 </head>
 <body header-desktop header-mobile><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a),document.documentElement.style.setProperty('color-scheme',a==='light'?'light':'dark'),window.theme=a}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let metaColors={light:'#f8f8f8',dark:'#252627',black:'#000000'};getMeta('theme-color').content=metaColors[document.body.getAttribute('theme')]</script>
 <div id=back-to-top></div>
@@ -80,12 +80,12 @@
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">ASP.NET Core入门</h1><div class=post-meta>
+<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","normal")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX"></h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
 </span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 542 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id=/posts/dotnet/aspnetcore%E5%85%A5%E9%97%A8/ class=leancloud_visitors data-flag-title="ASP.NET Core入门">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 527 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id=/posts/linux/wsl%E4%BD%BF%E7%94%A8linux%E6%A1%8C%E9%9D%A2/ class=leancloud_visitors data-flag-title>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -95,77 +95,72 @@
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
-<li><a href=#依赖注入的声明周期设计模式>依赖注入的声明周期（设计模式）</a></li>
-<li><a href=#依赖注入>依赖注入</a></li>
-<li><a href=#log4net>log4net</a></li>
-<li><a href=#自动数据类型转换>自动数据类型转换</a>
+<li><a href=#确认wsl已经是最新版>确认wsl已经是最新版</a></li>
+<li><a href=#安装linux发行版ubuntu>安装linux发行版(Ubuntu)</a></li>
+<li><a href=#确认wsl版本>确认wsl版本</a></li>
+<li><a href=#换源>换源</a></li>
+<li><a href=#启用systemd>启用systemd</a></li>
+<li><a href=#安装桌面应用>安装桌面应用</a></li>
+<li><a href=#运行>运行</a>
 <ul>
-<li><a href=#automapper>AutoMapper</a></li>
-<li><a href=#dependencyinjection>DependencyInjection</a></li>
-<li><a href=#拓展实例>拓展实例</a></li>
+<li><a href=#两种方式一是和windows融合很装x不知道为啥一定要sudo才能运行>两种方式，一是和windows融合，很装x，不知道为啥一定要sudo才能运行</a></li>
+<li><a href=#二是新建一个桌面>二是新建一个桌面</a></li>
 </ul>
 </li>
-<li><a href=#目录列表>目录列表</a>
-<ul>
-<li><a href=#common>common</a></li>
-<li><a href=#repositories>Repositories</a></li>
-</ul>
-</li>
-<li><a href=#相关文章>相关文章</a></li>
+<li><a href=#中文乱码>中文乱码</a></li>
 </ul>
 </nav></div>
-</div><div class=content id=content><h2 id=依赖注入的声明周期设计模式 class=headerLink>
-<a href=#%e4%be%9d%e8%b5%96%e6%b3%a8%e5%85%a5%e7%9a%84%e5%a3%b0%e6%98%8e%e5%91%a8%e6%9c%9f%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f class=header-mark></a>依赖注入的声明周期（设计模式）</h2><p><a href=https://www.cnblogs.com/huangxincheng/p/13594386.html target=_blank rel="noopener noreferrer">https://www.cnblogs.com/huangxincheng/p/13594386.html</a></p>
-<h2 id=依赖注入 class=headerLink>
-<a href=#%e4%be%9d%e8%b5%96%e6%b3%a8%e5%85%a5 class=header-mark></a>依赖注入</h2><p>ASP.NET Core 通过依赖关系注入进行生成。 服务（例如 SchoolContext）在应用程序启动期间通过依赖关系注入进行注册。 需要这些服务（如 Razor 页面）的组件通过构造函数参数提供相应服务。 本教程的后续部分介绍了用于获取数据库上下文实例的构造函数代码。</p>
-<p>基架工具自动将上下文类注册到了依赖项注入容器。
-<a href="https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0" target=_blank rel="noopener noreferrer">详情</a></p>
-<h2 id=log4net class=headerLink>
-<a href=#log4net class=header-mark></a>log4net</h2><p>在目录下有一个log4net配置文件，可以指定输出方法</p>
-<h2 id=自动数据类型转换 class=headerLink>
-<a href=#%e8%87%aa%e5%8a%a8%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e8%bd%ac%e6%8d%a2 class=header-mark></a>自动数据类型转换</h2><p>需要用到两个库</p>
-<h3 id=automapper class=headerLink>
-<a href=#automapper class=header-mark></a>AutoMapper</h3><p>自动数据类型转换</p>
-<h3 id=dependencyinjection class=headerLink>
-<a href=#dependencyinjection class=header-mark></a>DependencyInjection</h3><p>依赖注入</p>
-<h3 id=拓展实例 class=headerLink>
-<a href=#%e6%8b%93%e5%b1%95%e5%ae%9e%e4%be%8b class=header-mark></a>拓展实例</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-c# data-lang=c#><span class=k>public</span> <span class=k>static</span> <span class=k>class</span> <span class=nc>AutoMapperExtensions</span>
-<span class=p>{</span>
-    <span class=c1>//IServiceProvider是system接口
-</span><span class=c1></span>    <span class=k>private</span> <span class=k>static</span> <span class=n>IServiceProvider</span> <span class=m>_</span><span class=n>serviceProvider</span><span class=p>;</span>
-    <span class=k>public</span> <span class=k>static</span> <span class=k>void</span> <span class=n>UseAutoMapper</span><span class=p>(</span><span class=k>this</span> <span class=n>IServiceProvider</span> <span class=n>serviceProvider</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=m>_</span><span class=n>serviceProvider</span> <span class=p>=</span> <span class=n>serviceProvider</span><span class=p>;</span>
-    <span class=p>}</span>
-
-    <span class=k>public</span> <span class=k>static</span> <span class=n>TDestination</span> <span class=n>MapTo</span><span class=p>&lt;</span><span class=n>TDestination</span><span class=p>&gt;(</span><span class=k>this</span> <span class=kt>object</span> <span class=n>source</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=c1>//DependencyInjection拓展了GetRequiredService方法
-</span><span class=c1></span>        <span class=c1>//AutoMapper 实现IMapper类
-</span><span class=c1></span>        <span class=kt>var</span> <span class=n>mapper</span> <span class=p>=</span> <span class=m>_</span><span class=n>serviceProvider</span><span class=p>.</span><span class=n>GetRequiredService</span><span class=p>&lt;</span><span class=n>IMapper</span><span class=p>&gt;();</span>
-        <span class=k>return</span> <span class=n>mapper</span><span class=p>.</span><span class=n>Map</span><span class=p>&lt;</span><span class=n>TDestination</span><span class=p>&gt;(</span><span class=n>source</span><span class=p>);</span>
-    <span class=p>}</span>
-    <span class=k>public</span> <span class=k>static</span> <span class=n>List</span><span class=p>&lt;</span><span class=n>TDestnation</span><span class=p>&gt;</span> <span class=n>MapToList</span><span class=p>&lt;</span><span class=n>TDestnation</span><span class=p>&gt;(</span><span class=k>this</span> <span class=n>IEnumerable</span> <span class=n>source</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=kt>var</span> <span class=n>mapper</span> <span class=p>=</span> <span class=m>_</span><span class=n>serviceProvider</span><span class=p>.</span><span class=n>GetRequiredService</span><span class=p>&lt;</span><span class=n>IMapper</span><span class=p>&gt;();</span>
-        <span class=k>return</span> <span class=n>mapper</span><span class=p>.</span><span class=n>Map</span><span class=p>&lt;</span><span class=n>List</span><span class=p>&lt;</span><span class=n>TDestnation</span><span class=p>&gt;&gt;(</span><span class=n>source</span><span class=p>);</span>
-    <span class=p>}</span>
-<span class=p>}</span>
-</code></pre></div><p>在程序开始时候注入</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-c# data-lang=c#>    <span class=n>builder</span><span class=p>.</span><span class=n>Services</span><span class=p>.</span><span class=n>AddAutoMapper</span><span class=p>(</span><span class=k>typeof</span><span class=p>(</span><span class=n>AutoMapperProfile</span><span class=p>));</span>
-    <span class=n>builder</span><span class=p>.</span><span class=n>Services</span><span class=p>.</span><span class=n>AddAutoMapper</span><span class=p>(</span><span class=n>Assembly</span><span class=p>.</span><span class=n>GetEntryAssembly</span><span class=p>());</span>
-    <span class=c1>//注入自己写的automapper拓展
-</span><span class=c1></span>    <span class=n>app</span><span class=p>.</span><span class=n>Services</span><span class=p>.</span><span class=n>UseAutoMapper</span><span class=p>();</span>
-
-</code></pre></div><h2 id=目录列表 class=headerLink>
-<a href=#%e7%9b%ae%e5%bd%95%e5%88%97%e8%a1%a8 class=header-mark></a>目录列表</h2><h3 id=common class=headerLink>
-<a href=#common class=header-mark></a>common</h3><p>常用方法，例如拓展string拓展方法</p>
-<h3 id=repositories class=headerLink>
-<a href=#repositories class=header-mark></a>Repositories</h3><p>数据库方面</p>
-<h4 id=entites class=headerLink>
-<a href=#entites class=header-mark></a>Entites</h4><p>数据表</p>
-<h2 id=相关文章 class=headerLink>
-<a href=#%e7%9b%b8%e5%85%b3%e6%96%87%e7%ab%a0 class=header-mark></a>相关文章</h2></div>
+</div><div class=content id=content><h1 id=wsl使用linux桌面gui class=headerLink>
+<a href=#wsl%e4%bd%bf%e7%94%a8linux%e6%a1%8c%e9%9d%a2gui class=header-mark></a>wsl使用linux桌面,gui</h1><p>linux课说需要用gui，本来说用vmware，但windows有自带的为何不用呢</p>
+<p>使用linux桌面有很多种，可以用rdp, vnc, 但我看最近出来wslg ,相当于原生支持linux gui, 不需要远程连接</p>
+<h2 id=确认wsl已经是最新版 class=headerLink>
+<a href=#%e7%a1%ae%e8%ae%a4wsl%e5%b7%b2%e7%bb%8f%e6%98%af%e6%9c%80%e6%96%b0%e7%89%88 class=header-mark></a>确认wsl已经是最新版</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>wsl --upgrade
+</code></pre></div><h2 id=安装linux发行版ubuntu class=headerLink>
+<a href=#%e5%ae%89%e8%a3%85linux%e5%8f%91%e8%a1%8c%e7%89%88ubuntu class=header-mark></a>安装linux发行版(Ubuntu)</h2><p>打开<code>https://www.microsoft.com/p/ubuntu/9pdxgncfsczv</code>，安装即可</p>
+<h2 id=确认wsl版本 class=headerLink>
+<a href=#%e7%a1%ae%e8%ae%a4wsl%e7%89%88%e6%9c%ac class=header-mark></a>确认wsl版本</h2><p><code>wsl -l -v</code>
+<figure><a class=lightgallery href=/assets/images/2023-04-06-09-41-11.png title=/assets/images/2023-04-06-09-41-11.png data-thumbnail=/assets/images/2023-04-06-09-41-11.png>
+<img loading=lazy src=/assets/images/2023-04-06-09-41-11.png srcset="/assets/images/2023-04-06-09-41-11.png, /assets/images/2023-04-06-09-41-11.png 1.5x, /assets/images/2023-04-06-09-41-11.png 2x" sizes=auto alt=/assets/images/2023-04-06-09-41-11.png>
+</a></figure>
+确保version是2</p>
+<h2 id=换源 class=headerLink>
+<a href=#%e6%8d%a2%e6%ba%90 class=header-mark></a>换源</h2><p><a href=https://mirrors.bfsu.edu.cn/help/ubuntu/ target=_blank rel="noopener noreferrer">使用北外镜像</a></p>
+<h2 id=启用systemd class=headerLink>
+<a href=#%e5%90%af%e7%94%a8systemd class=header-mark></a>启用systemd</h2><p><a href=https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/ target=_blank rel="noopener noreferrer">ref</a>
+修改<code>/etc/wsl.conf</code></p>
+<pre tabindex=0><code class=language-conf data-lang=conf>[boot]
+systemd=true
+</code></pre><p><code>powershell</code>运行<code>wsl --shutdown</code>重启wsl，再进入</p>
+<p><code>systemctl</code>查看是否开启</p>
+<h2 id=安装桌面应用 class=headerLink>
+<a href=#%e5%ae%89%e8%a3%85%e6%a1%8c%e9%9d%a2%e5%ba%94%e7%94%a8 class=header-mark></a>安装桌面应用</h2><p><code>sudo apt update && sudo apt install tasksel -y</code>
+<code>tasksel</code></p>
+<p>安装 debian desktop env和xfce就好
+<figure><a class=lightgallery href=/assets/images/0be48f14e8ef2a9002796099987c2e7fb81c88ab2f48c61c81067d2987e30185.png title="图 4" data-thumbnail=/assets/images/0be48f14e8ef2a9002796099987c2e7fb81c88ab2f48c61c81067d2987e30185.png>
+<img loading=lazy src=/assets/images/0be48f14e8ef2a9002796099987c2e7fb81c88ab2f48c61c81067d2987e30185.png srcset="/assets/images/0be48f14e8ef2a9002796099987c2e7fb81c88ab2f48c61c81067d2987e30185.png, /assets/images/0be48f14e8ef2a9002796099987c2e7fb81c88ab2f48c61c81067d2987e30185.png 1.5x, /assets/images/0be48f14e8ef2a9002796099987c2e7fb81c88ab2f48c61c81067d2987e30185.png 2x" sizes=auto alt=/assets/images/0be48f14e8ef2a9002796099987c2e7fb81c88ab2f48c61c81067d2987e30185.png>
+</a></figure></p>
+<h2 id=运行 class=headerLink>
+<a href=#%e8%bf%90%e8%a1%8c class=header-mark></a>运行</h2><h3 id=两种方式一是和windows融合很装x不知道为啥一定要sudo才能运行 class=headerLink>
+<a href=#%e4%b8%a4%e7%a7%8d%e6%96%b9%e5%bc%8f%e4%b8%80%e6%98%af%e5%92%8cwindows%e8%9e%8d%e5%90%88%e5%be%88%e8%a3%85x%e4%b8%8d%e7%9f%a5%e9%81%93%e4%b8%ba%e5%95%a5%e4%b8%80%e5%ae%9a%e8%a6%81sudo%e6%89%8d%e8%83%bd%e8%bf%90%e8%a1%8c class=header-mark></a>两种方式，一是和windows融合，很装x，不知道为啥一定要sudo才能运行</h3><p><code>sudo startxfce4</code></p>
+<p><figure><a class=lightgallery href=/assets/images/d12607dba025b99a03cf1d119ef9e73280ea9fd069d8cee47b493fbcc9afb4ff.png title="图 5" data-thumbnail=/assets/images/d12607dba025b99a03cf1d119ef9e73280ea9fd069d8cee47b493fbcc9afb4ff.png>
+<img loading=lazy src=/assets/images/d12607dba025b99a03cf1d119ef9e73280ea9fd069d8cee47b493fbcc9afb4ff.png srcset="/assets/images/d12607dba025b99a03cf1d119ef9e73280ea9fd069d8cee47b493fbcc9afb4ff.png, /assets/images/d12607dba025b99a03cf1d119ef9e73280ea9fd069d8cee47b493fbcc9afb4ff.png 1.5x, /assets/images/d12607dba025b99a03cf1d119ef9e73280ea9fd069d8cee47b493fbcc9afb4ff.png 2x" sizes=auto alt=/assets/images/d12607dba025b99a03cf1d119ef9e73280ea9fd069d8cee47b493fbcc9afb4ff.png>
+</a></figure><br>
+会发现有一个linux的任务栏和linux的导航栏，直接融合在windows里面了</p>
+<h3 id=二是新建一个桌面 class=headerLink>
+<a href=#%e4%ba%8c%e6%98%af%e6%96%b0%e5%bb%ba%e4%b8%80%e4%b8%aa%e6%a1%8c%e9%9d%a2 class=header-mark></a>二是新建一个桌面</h3><p>新建<code>start.sh</code></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=cp>#!/usr/bin/sh
+</span><span class=cp></span>Xwayland :1 <span class=p>&amp;</span>
+<span class=nv>xw_pid</span><span class=o>=</span><span class=nv>$!</span>
+<span class=nv>WAYLAND_DISPLAY</span><span class=o>=</span> <span class=nv>DISPLAY</span><span class=o>=</span>:1 dbus-launch startxfce4
+<span class=nb>kill</span> <span class=nv>$xw_pid</span>
+</code></pre></div><p><code>chmod +x start.sh</code>
+<code>./start.sh</code></p>
+<p><figure><a class=lightgallery href=/assets/images/2876f5da2d28168f82b8ea971ab03b0671bdd5189843c57885f7e5942c2f111c.png title="图 6" data-thumbnail=/assets/images/2876f5da2d28168f82b8ea971ab03b0671bdd5189843c57885f7e5942c2f111c.png>
+<img loading=lazy src=/assets/images/2876f5da2d28168f82b8ea971ab03b0671bdd5189843c57885f7e5942c2f111c.png srcset="/assets/images/2876f5da2d28168f82b8ea971ab03b0671bdd5189843c57885f7e5942c2f111c.png, /assets/images/2876f5da2d28168f82b8ea971ab03b0671bdd5189843c57885f7e5942c2f111c.png 1.5x, /assets/images/2876f5da2d28168f82b8ea971ab03b0671bdd5189843c57885f7e5942c2f111c.png 2x" sizes=auto alt=/assets/images/2876f5da2d28168f82b8ea971ab03b0671bdd5189843c57885f7e5942c2f111c.png>
+</a></figure></p>
+<h2 id=中文乱码 class=headerLink>
+<a href=#%e4%b8%ad%e6%96%87%e4%b9%b1%e7%a0%81 class=header-mark></a>中文乱码</h2><p><a href=https://blog.csdn.net/weixin_41714373/article/details/119519589 target=_blank rel="noopener noreferrer">https://blog.csdn.net/weixin_41714373/article/details/119519589</a></p>
+</div>
 <div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
@@ -175,7 +170,7 @@
 <div class=post-info-license></div>
 </div>
 <div class=post-info-line>
-<div class=post-info-md><span><a class=link-to-mardown href=/posts/dotnet/aspnetcore%E5%85%A5%E9%97%A8/index.md target=_blank rel="noopener noreferrer">阅读原始文档</a>
+<div class=post-info-md><span><a class=link-to-mardown href=/posts/linux/wsl%E4%BD%BF%E7%94%A8linux%E6%A1%8C%E9%9D%A2/index.md target=_blank rel="noopener noreferrer">阅读原始文档</a>
 </span></div>
 <div class=post-info-share>
 <span></span>
@@ -188,8 +183,8 @@
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E5%9C%A8%E7%BA%BFide/ class=prev rel=prev title=盘点一下免费在线ide><i class="fas fa-angle-left fa-fw"></i>盘点一下免费在线ide</a>
-<a href=/posts/linux/wsl%E4%BD%BF%E7%94%A8linux%E6%A1%8C%E9%9D%A2/ class=next rel=next title><i class="fas fa-angle-right fa-fw"></i></a></div>
+<div class=post-nav><a href=/posts/dotnet/aspnetcore%E5%85%A5%E9%97%A8/ class=prev rel=prev title="ASP.NET Core入门"><i class="fas fa-angle-left fa-fw"></i>ASP.NET Core入门</a>
+<a href=/posts/linux/tmux/ class=next rel=next title><i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
