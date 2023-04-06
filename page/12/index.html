@@ -84,6 +84,12 @@
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=所有文章><img loading=eager src="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" srcset="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 1.5x, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 2x" sizes=auto alt="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" title="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" height=100 width=100></a></div><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/lyj0309 title=GitHub target=_blank rel="noopener noreferrer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://www.zhihu.com/people/liang-yan-jun-72 title=知乎 target=_blank rel="noopener noreferrer me"><i data-svg-src=/lib/simple-icons/icons/zhihu.min.svg></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreferrer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/go/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98/>力扣刷题</a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-02-10>2022-02-10</time></span></div><div class=content>//459. 重复的子字符串 func repeatedSubstringPattern(s string) bool { l := len(s) for i := 1; i &lt;= l/2; i++ { if l%i == 0 { subs := s[:i] t := true for k := 0; k &lt; l/i; k++ { if s[k*i:k*i+i] != subs { t = false break } } if t { return true } } } return false } //1447. 最简</div><div class=post-footer>
+<a href=/posts/go/%E5%8A%9B%E6%89%A3%E5%88%B7%E9%A2%98/>阅读全文</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/hugo%E4%BD%BF%E7%94%A8%E6%B7%BB%E5%8A%A0algolia%E6%90%9C%E7%B4%A2/>Hugo使用添加algolia搜索</a>
 </h1><div class=post-meta>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
@@ -117,13 +123,6 @@
 </span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-02-07>2022-02-07</time></span></div><div class=content>fly.io类似于Okteto、Heroku和Railway的PaaS平台。 只能通过CLI登录，对小白可能有些不太友好。 官网：fly.io 免</div><div class=post-footer>
 <a href=/posts/cloud/fly/>阅读全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E7%99%BD%E5%AB%96/>白嫖</a>,&nbsp;<a href=/tags/cloud/>cloud</a>,&nbsp;<a href=/tags/paas/>PaaS</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/cloud/scaleway-0.38%E6%AC%A7vps/>scaleway 0.38欧元/月vps</a>
-</h1><div class=post-meta>
-<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
-</span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-02-07>2022-02-07</time></span></div><div class=content>简介scaleway 是法国的一个云厂商，其中有个服务器只要0.38欧元/月 网址&lt;scaleway.com> 只要ipv6 基于kvm</div><div class=post-footer>
-<a href=/posts/cloud/scaleway-0.38%E6%AC%A7vps/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E7%99%BD%E5%AB%96/>白嫖</a>,&nbsp;<a href=/tags/cloud/>cloud</a>,&nbsp;<a href=/tags/vps/>vps</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
