@@ -1,3 +1,10 @@
+---
+title: "wsl使用linux桌面,gui"
+date: 2023-03-18T20:44:06+08:00
+tags: ["linux","wsl"]
+---
+
+
 # wsl使用linux桌面,gui
 
 linux课说需要用gui，本来说用vmware，但windows有自带的为何不用呢
