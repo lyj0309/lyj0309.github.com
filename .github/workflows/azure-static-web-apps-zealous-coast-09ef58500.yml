@@ -23,7 +23,9 @@ jobs:
           
       - run: |
           rm package.json
-          echo ${{ secrets.SUBSCRIBE }} > ./static/${{ secrets.SUBSCRIBE_ID }}.txt
+          rm package-lock.json
+          ls
+          # echo ${{ secrets.SUBSCRIBE }} > ./static/${{ secrets.SUBSCRIBE_ID }}.txt
           
       - name: Build And Deploy
         id: builddeploy
@@ -40,6 +42,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env:
           HUGO_VERSION: 0.92.1
+          RUN_BUILD_COMMAND: hogo -e
   
           
   close_pull_request_job:
