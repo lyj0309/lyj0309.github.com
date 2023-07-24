@@ -84,6 +84,20 @@
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=所有文章><img loading=eager src="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" srcset="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 1.5x, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 2x" sizes=auto alt="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" title="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" height=100 width=100></a></div><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/lyj0309 title=GitHub target=_blank rel="noopener noreferrer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://www.zhihu.com/people/liang-yan-jun-72 title=知乎 target=_blank rel="noopener noreferrer me"><i data-svg-src=/lib/simple-icons/icons/zhihu.min.svg></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreferrer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/middleware/redis/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8bloomfilter/>布隆过滤器(BloomFilter)</a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-03-18>2022-03-18</time></span></div><div class=content>Bloom Filter 概念布隆过滤器（英语：Bloom Filter）是1970年由一个叫布隆的小伙子提出的。它实际上是一个很长的二进制向量和一系列随机映射函数</div><div class=post-footer>
+<a href=/posts/middleware/redis/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8bloomfilter/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/redis/>redis</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/linux/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%94%81/>操作系统锁</a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-03-18>2022-03-18</time></span></div><div class=content>死锁的概念死锁（Deadlock）：是指两个或两个以上的进程在执行过程中，因争夺资源而造成的一种互相等待的现象，若无外力作用，它们都将无法推</div><div class=post-footer>
+<a href=/posts/linux/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%94%81/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/>操作系统</a>,&nbsp;<a href=/tags/%E5%85%AB%E8%82%A1/>八股</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/go/go%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/>Go交叉编译</a>
 </h1><div class=post-meta>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
@@ -111,19 +125,6 @@
 </span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-03-02>2022-03-02</time></span></div><div class=content>go提供了一个读取库encoding package main import ( "encoding/csv" "log" "os" ) //go语言读写csv文件 func main() { //创建一个io对象 filename:="Person1.csv" f := ReadCsv(filename) //WriterCSV(filename) } //csv文件读取 func ReadCsv(filepath string)</div><div class=post-footer>
 <a href=/posts/go/go-csv/>阅读全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/go/>Go</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/draft/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/>Linux基本命令</a>
-</h1><div class=post-meta>
-<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
-</span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-02-18>2022-02-18</time></span></div><div class=content>文本操作cat查看文件 cat filename 写入文件 cat >> filename &lt;&lt; EOF #EOF是标记符，写什么无所谓，但EOF为大家默认 > hahaha > hehehe EOF #再次输入标记符表示结束，如果最初的</div><div class=post-footer>
-<a href=/posts/draft/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/>阅读全文</a></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/middleware/elastic/kibana%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/>Kibana改中文</a>
-</h1><div class=post-meta>
-<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
-</span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-02-18>2022-02-18</time></span></div><div class=content>在 kibana.yml配置文件中加一行 docker exec -it -c efk-kibana-1 cat i18n.locale: "zh-CN" docker exec -ti kib sh -c "cat &lt;&lt; EOF >> config/kibana.yml i18n.locale: \"zh-CN\" EOF" 重启kibana docker restart kib</div><div class=post-footer>
-<a href=/posts/middleware/elastic/kibana%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/elastic/>elastic</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
@@ -161,7 +162,7 @@
 <div class=footer-container><div class=footer-line>
 由 <a href=https://gohugo.io/ target=_blank rel="noopener noreferrer" title="Hugo 0.91.2">Hugo</a> 强力驱动&nbsp;|&nbsp;主题 - <a href=https://github.com/HEIGE-PCloud/DoIt target=_blank rel="noopener noreferrer" title="DoIt 0.3.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
 </div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2020 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://github.com/lyj0309 target=_blank rel="noopener noreferrer">lyj</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span><span class=icp-splitter>&nbsp;|&nbsp;</span><br class=icp-br>
-<span class=icp><a class=theme-link href=https://beian.miit.gov.cn>桂ICP备20003848号</a></span></div>
+<span class=icp><a class=theme-link href=https://beian.miit.gov.cn>桂ICP备20003848号</a><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5481706144401224" crossorigin=anonymous></script></span></div>
 <div class=footer-line></div>
 <div class=footer-line>
 </div>
