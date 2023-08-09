@@ -4,7 +4,7 @@ export default async (request: Request):Promise<Response> => {
     const url = new URL(request.url);
     url.host = BASE_URL.replace(/^https?:\/\//, '').replace(PREFIX,"/");
   
-    const modifiedRequest = new Request(url.toString(), {
+    const modifiedRequest = new Request(url.toString().replace(PREFIX,"/"), {
       headers: request.headers,
       method: request.method,
       body: request.body,
