@@ -3,7 +3,7 @@
   "links": [
     {
       "rel": "http://openid.net/specs/connect/1.0/issuer",
-      "href": "https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_TTBEZPWT6/.well-known/openid-configuration"
+      "href": "https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_TTBEZPWT6"
     }
   ]
 }
