@@ -84,6 +84,13 @@
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=所有文章><img loading=eager src="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" srcset="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 1.5x, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 2x" sizes=auto alt="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" title="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" height=100 width=100></a></div><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/lyj0309 title=GitHub target=_blank rel="noopener noreferrer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://www.zhihu.com/people/liang-yan-jun-72 title=知乎 target=_blank rel="noopener noreferrer me"><i data-svg-src=/lib/simple-icons/icons/zhihu.min.svg></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreferrer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/linux/%E5%85%AC%E9%92%A5%E7%99%BB%E9%99%86/>linux 公钥登陆</a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-03-18>2022-03-18</time></span></div><div class=content>生成密钥ssh-keygen -t rsa 编辑配置文件vim /etc/ssh/sshd_config RSAAuthentication yes : 开启rsa验证 PubkeyAuthentication yes: 是否使用公钥 保存公钥到服务器cat id_rsa.pub >>/root/.ssh/authorized_keys root用户，不同用户路径</div><div class=post-footer>
+<a href=/posts/linux/%E5%85%AC%E9%92%A5%E7%99%BB%E9%99%86/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/linux/>linux</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/middleware/redis/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8bloomfilter/>布隆过滤器(BloomFilter)</a>
 </h1><div class=post-meta>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
@@ -118,13 +125,6 @@
 </span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-03-11>2022-03-11</time></span></div><div class=content>前言最近超星改网页改的厉害，导致很多网页脚本无法运行 遂使用命令行，绕过网页直接刷 刷前提醒 开倍数，使用脚本有风险，出现的结果本人一概不负责 脚本</div><div class=post-footer>
 <a href=/posts/cx/%E5%AD%A6%E4%B9%A0%E9%80%9A%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4%E8%A1%8C/>阅读全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%AD%A6%E4%B9%A0%E9%80%9A/>学习通</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/go/go-csv/>Go Csv</a>
-</h1><div class=post-meta>
-<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
-</span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-03-02>2022-03-02</time></span></div><div class=content>go提供了一个读取库encoding package main import ( "encoding/csv" "log" "os" ) //go语言读写csv文件 func main() { //创建一个io对象 filename:="Person1.csv" f := ReadCsv(filename) //WriterCSV(filename) } //csv文件读取 func ReadCsv(filepath string)</div><div class=post-footer>
-<a href=/posts/go/go-csv/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/go/>Go</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
@@ -155,7 +155,7 @@
 <span class=page-link aria-hidden=true>&mldr;</span>
 </li><li class=page-item>
 <span class=page-link>
-<a href=/page/16/>16</a>
+<a href=/page/17/>17</a>
 </span>
 </li></ul></div></div>
 </main><footer class=footer>

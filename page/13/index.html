@@ -84,6 +84,13 @@
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=所有文章><img loading=eager src="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" srcset="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 1.5x, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 2x" sizes=auto alt="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" title="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" height=100 width=100></a></div><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/lyj0309 title=GitHub target=_blank rel="noopener noreferrer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://www.zhihu.com/people/liang-yan-jun-72 title=知乎 target=_blank rel="noopener noreferrer me"><i data-svg-src=/lib/simple-icons/icons/zhihu.min.svg></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreferrer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/devops/mysql%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD/>Mysql自动备份</a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=2022-02-07>2022-02-07</time></span></div><div class=content>有时候，ddos或者各种攻击会导致服务瘫痪，或者当前服务器进入流量黑洞，无法访问，或者管理员手欠不小心删了一些数据，这时候，数据库的备份就显</div><div class=post-footer>
+<a href=/posts/devops/mysql%E8%87%AA%E5%8A%A8%E5%A4%87%E4%BB%BD/>阅读全文</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/devops/>devops</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/devops/docker/>docker&compose安装</a>
 </h1><div class=post-meta>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
@@ -118,13 +125,6 @@
 </span>&nbsp;<span class=post-publish>发布于 <time datetime=2021-10-21>2021-10-21</time></span></div><div class=content>GOVER=1.17.2 wget golang.google.cn/dl/go${GOVER}.linux-amd64.tar.gz tar -xzf go${GOVER}.linux-amd64.tar.gz mv ./go /usr/local/go echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile source /etc/profile rm golang.google.cn/dl/go${GOVER}.linux-amd64.tar.gz #腾讯外网 go env -w GOPROXY=https://mirrors.cloud.tencent.com/go/ #腾讯内网 go env -w GOPROXY=http://mirrors.tencentyun.com/go/ #七牛镜像 go env -w GOPROXY=https://goproxy.cn,direct export GOPROXY=http://mirrors.tencentyun.com/go/</div><div class=post-footer>
 <a href=/posts/go/%E5%AE%89%E8%A3%85/>阅读全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/go/>Go</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/go/%E8%AF%B7%E6%B1%82-http/>go请求http</a>
-</h1><div class=post-meta>
-<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
-</span>&nbsp;<span class=post-publish>发布于 <time datetime=2021-10-21>2021-10-21</time></span></div><div class=content>go提供了一个http包，可以通过这个包方便的进行http请求 import ( "fmt" "io/ioutil" "net/http" "strings" ) // http.Get func httpGet() { resp, err := http.Get("http://www.baidu.com") if err != nil { fmt.Println(err) return } defer resp.Body.Close() body, err := ioutil.ReadAll(resp.Body) fmt.Println(string(body)) } func httpPost() { resp, err := http.Post("http://www.baidu.com",</div><div class=post-footer>
-<a href=/posts/go/%E8%AF%B7%E6%B1%82-http/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/go/>Go</a></div></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
@@ -152,8 +152,10 @@
 <a href=/page/15/>15</a>
 </span>
 </li><li class=page-item>
+<span class=page-link aria-hidden=true>&mldr;</span>
+</li><li class=page-item>
 <span class=page-link>
-<a href=/page/16/>16</a>
+<a href=/page/17/>17</a>
 </span>
 </li></ul></div></div>
 </main><footer class=footer>

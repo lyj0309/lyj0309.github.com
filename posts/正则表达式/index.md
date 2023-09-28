@@ -1,0 +1,10 @@
+# 正则表达式
+
+
+
+## 正则表达式
+捕获组
+MigrationStatus *?= (MigrationStatus\..*?);
+其中大括号里面的就是一个捕获组，可以在替换的时候使用
+AddReportStatus($1);
+

@@ -4,19 +4,19 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <title> - FAKEV</title><meta name=Description content="技术博客分享站"><meta property="og:title" content>
-<meta property="og:description" content="只有在用户登陆的时候执行自己写一个shell脚本 将写好的脚本（.sh文件）放到目录 /etc/profile.d/ 下，系统启动后就会自动执行该目录下的所有shell脚本。">
+<meta property="og:description" content>
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://fakev.cn/posts/linux/linux%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://fakev.cn/posts/linux/ssh%E5%85%AC%E9%92%A5%E9%85%8D%E7%BD%AE%E7%99%BB%E9%99%86/"><meta property="article:section" content="posts">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content>
-<meta name=twitter:description content="只有在用户登陆的时候执行自己写一个shell脚本 将写好的脚本（.sh文件）放到目录 /etc/profile.d/ 下，系统启动后就会自动执行该目录下的所有shell脚本。">
+<meta name=twitter:description content>
 <meta name=application-name content="FAKEV">
 <meta name=apple-mobile-web-app-title content="FAKEV">
 <meta name=theme-color content="#f8f8f8"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/posts/linux/linux%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/><link rel=prev href=https://fakev.cn/posts/linux/linux%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA%E8%AF%AD%E8%A8%80/><link rel=next href=https://fakev.cn/posts/linux/linux%E5%88%9B%E5%BB%BA%E5%88%86%E5%8C%BA/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/color.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=canonical href=https://fakev.cn/posts/linux/ssh%E5%85%AC%E9%92%A5%E9%85%8D%E7%BD%AE%E7%99%BB%E9%99%86/><link rel=prev href=https://fakev.cn/posts/linux/tmux/><link rel=next href=https://fakev.cn/posts/linux/shell/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/color.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
 <noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
-<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/fakev.cn\/posts\/linux\/linux%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8\/"},"genre":"posts","wordcount":637,"url":"https:\/\/fakev.cn\/posts\/linux\/linux%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8\/","publisher":{"@type":"Organization","name":"lyj"},"author":{"@type":"Person","name":"lyj"},"description":""}</script><script src=//instant.page/5.1.1 defer type=module integrity=sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq></script>
+<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/fakev.cn\/posts\/linux\/ssh%E5%85%AC%E9%92%A5%E9%85%8D%E7%BD%AE%E7%99%BB%E9%99%86\/"},"genre":"posts","wordcount":0,"url":"https:\/\/fakev.cn\/posts\/linux\/ssh%E5%85%AC%E9%92%A5%E9%85%8D%E7%BD%AE%E7%99%BB%E9%99%86\/","publisher":{"@type":"Organization","name":"lyj"},"author":{"@type":"Person","name":"lyj"},"description":""}</script><script src=//instant.page/5.1.1 defer type=module integrity=sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq></script>
 </head>
 <body header-desktop header-mobile><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a),document.documentElement.style.setProperty('color-scheme',a==='light'?'light':'dark'),window.theme=a}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let metaColors={light:'#f8f8f8',dark:'#252627',black:'#000000'};getMeta('theme-color').content=metaColors[document.body.getAttribute('theme')]</script>
 <div id=back-to-top></div>
@@ -84,8 +84,8 @@
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
 </span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 637 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;<span id=/posts/linux/linux%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/ class=leancloud_visitors data-flag-title>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=0001-01-01>0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 0 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 0 分钟&nbsp;<span id=/posts/linux/ssh%E5%85%AC%E9%92%A5%E9%85%8D%E7%BD%AE%E7%99%BB%E9%99%86/ class=leancloud_visitors data-flag-title>
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
 </span>&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
@@ -93,53 +93,8 @@
 <span>目录</span>
 <span><i class="details-icon fas fa-angle-right"></i></span>
 </div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
-<ul>
-<li><a href=#只有在用户登陆的时候执行>只有在用户登陆的时候执行</a></li>
-<li><a href=#使用systemd>使用systemd</a></li>
-</ul>
-</nav></div>
-</div><div class=content id=content><h2 id=只有在用户登陆的时候执行 class=headerLink>
-<a href=#%e5%8f%aa%e6%9c%89%e5%9c%a8%e7%94%a8%e6%88%b7%e7%99%bb%e9%99%86%e7%9a%84%e6%97%b6%e5%80%99%e6%89%a7%e8%a1%8c class=header-mark></a>只有在用户登陆的时候执行</h2><p>自己写一个shell脚本</p>
-<p>将写好的脚本（.sh文件）放到目录 /etc/profile.d/ 下，系统启动后就会自动执行该目录下的所有shell脚本。</p>
-<p>cd /etc/profile.d/
-复制
-添加脚本srs.sh</p>
-<p>#!/bin/sh</p>
-<p>cd /usr/local/srs2
-nohup ./objs/srs -c conf/z.conf>./log.txt &</p>
-<h2 id=使用systemd class=headerLink>
-<a href=#%e4%bd%bf%e7%94%a8systemd class=header-mark></a>使用systemd</h2><p>进入目录  cd /etc/systemd/system/</p>
-<p>1：编写属于自己的unit文件，命令为my-demo.service，整个文件如下</p>
-<p>[Unit]</p>
-<p>Description=My-demo Service                                                                                   </p>
-<p>[Service]</p>
-<p>Type=oneshot</p>
-<p>ExecStart=/bin/bash /root/test.sh #自己的脚本文件</p>
-<p>StandardOutput=syslog</p>
-<p>StandardError=inherit</p>
-<p>[Install]</p>
-<p>WantedBy=multi-user.target</p>
-<p>2：将上述的文件拷贝到 /usr/lib/systemd/system/*目录下</p>
-<p>3：编写unit文件中ExecStart=/bin/bash /root/test.sh所定义的test.sh文件，将其放在定义的目录当中，此文件是服务的执行主体。文件内容如下：</p>
-<p>#!/bin/bash                                                                                                                                       </p>
-<p>date &#187; /tmp/date</p>
-<p>4：将my-demo.service注册到系统当中执行命令：</p>
-<p>systemctl enable my-demo.service</p>
-<p>输出：ln -s'/usr/lib/systemd/system/my-demo.service' &lsquo;/etc/systemd/system/multi-user.target.wants/my-demo.service&rsquo;</p>
-<p>输出表明，注册的过程实际上就是将服务链接到/etc/systemd/system/目录下</p>
-<p>至此服务已经创建完成。重新启动系统，会发现/tmp/date文件已经生成，服务在开机时启动成功。当然本例当中的test.sh文件可以换成任意的可执行文件作为服务的主体，这样就可以实现各种各样的功能。</p>
-<p>记录：</p>
-<p>启动：systemctl start my-demo.service</p>
-<p>结束：systemctl stop my-demo.service</p>
-<p>重启：systemctl restart my-demo.service</p>
-<p>状态：systemctl status my-demo.service</p>
-<p>查看服务状态： systemctl status network.service</p>
-<p>列出所有可用单元：systemctl list-unit-files</p>
-<p>列出所有运行中单元：systemctl list-units</p>
-<p>列出所有失败单元：systemctl &ndash;failed</p>
-<p>使用systemctl命令杀死服务：systemctl kill network.service </p>
-</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents></nav></div>
+</div><div class=content id=content></div>
 <div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
@@ -149,7 +104,7 @@ nohup ./objs/srs -c conf/z.conf>./log.txt &</p>
 <div class=post-info-license></div>
 </div>
 <div class=post-info-line>
-<div class=post-info-md><span><a class=link-to-mardown href=/posts/linux/linux%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8/index.md target=_blank rel="noopener noreferrer">阅读原始文档</a>
+<div class=post-info-md><span><a class=link-to-mardown href=/posts/linux/ssh%E5%85%AC%E9%92%A5%E9%85%8D%E7%BD%AE%E7%99%BB%E9%99%86/index.md target=_blank rel="noopener noreferrer">阅读原始文档</a>
 </span></div>
 <div class=post-info-share>
 <span></span>
@@ -162,8 +117,8 @@ nohup ./objs/srs -c conf/z.conf>./log.txt &</p>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/linux/linux%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA%E8%AF%AD%E8%A8%80/ class=prev rel=prev title><i class="fas fa-angle-left fa-fw"></i></a>
-<a href=/posts/linux/linux%E5%88%9B%E5%BB%BA%E5%88%86%E5%8C%BA/ class=next rel=next title><i class="fas fa-angle-right fa-fw"></i></a></div>
+<div class=post-nav><a href=/posts/linux/tmux/ class=prev rel=prev title><i class="fas fa-angle-left fa-fw"></i></a>
+<a href=/posts/linux/shell/ class=next rel=next title><i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

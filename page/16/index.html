@@ -84,25 +84,46 @@
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile><div class=home-avatar><a href=/posts/ title=所有文章><img loading=eager src="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" srcset="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 1.5x, https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp 2x" sizes=auto alt="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" title="https://www.gravatar.com/avatar/925f106f8657f9f31645440a0a538227?s=240&d=mp" height=100 width=100></a></div><h2 class=home-subtitle><div id=id-1 class=typeit></div></h2><div class=links><a href=https://github.com/lyj0309 title=GitHub target=_blank rel="noopener noreferrer me"><i class="fab fa-github-alt fa-fw"></i></a><a href=https://www.zhihu.com/people/liang-yan-jun-72 title=知乎 target=_blank rel="noopener noreferrer me"><i data-svg-src=/lib/simple-icons/icons/zhihu.min.svg></i></a><a href=/index.xml title=RSS target=_blank rel="noopener noreferrer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/linux/shell/></a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>包含字符串A="helloworld" B="low" if [[ $A == *$B* ]] then echo "包含" else echo "不包含" fi</div><div class=post-footer>
+<a href=/posts/linux/shell/>阅读全文</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/linux/ssh%E5%85%AC%E9%92%A5%E9%85%8D%E7%BD%AE%E7%99%BB%E9%99%86/></a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content></div><div class=post-footer>
+<a href=/posts/linux/ssh%E5%85%AC%E9%92%A5%E9%85%8D%E7%BD%AE%E7%99%BB%E9%99%86/>阅读全文</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/linux/tmux/></a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>tmux 后台运行 tmux new -s frp -d tmux send -t frp "cd /root/frp" ENTER tmux send -t frp "./frpc -c ./frpc.ini" ENTER</div><div class=post-footer>
+<a href=/posts/linux/tmux/>阅读全文</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/linux%E6%91%84%E5%83%8F%E5%A4%B4%E6%8E%A8%E6%B5%81/></a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>v4l2-ctl -d /dev/video4 &ndash;list-formats-ext ffmpeg -f v4l2 -input_format mjpeg -i /dev/video4 -t 5 out.mp4
+ffmpeg -codecs http://192.168.10.102/webcam/?action=stream&cacheBust=1689651483031
+ffmpeg -c:v mjpeg_qsv -i &ldquo;http://192.168.10.102/webcam/?action=stream&cacheBust=1689651483031&rdquo; -c:v h264_qsv -low_power 1 output.mp4
+ffmpeg -thread_queue_size 1024 -f v4l2 -i "http://192.168.10.102/webcam/?action=stream" -stream_loop -1 -i "data/demo_music.m4a" -c:v h264_qsv -pix_fmt yuv420p -r 30 -s 1280*720 -g 60 -b:v 10M -bufsize 10M -acodec aac -ac 2 -ar 44100 -ab 128k -f flv [[URL]]
+ffmpeg -c:v mjpeg_qsv -i &ldquo;http://192.168.10.102/webcam/?action=stream&cacheBust=1689651483031&rdquo; -c:v h264_qsv -low_power 1 output.</div><div class=post-footer>
+<a href=/posts/linux%E6%91%84%E5%83%8F%E5%A4%B4%E6%8E%A8%E6%B5%81/>阅读全文</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/dotnet/aspnetcore%E5%85%A5%E9%97%A8/>ASP.NET Core入门</a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
+</span>&nbsp;<span class=post-publish>发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>依赖注入的声明周期（设计模式）https://www.cnblogs.com/huangxincheng/p/13594386.html 依赖</div><div class=post-footer>
+<a href=/posts/dotnet/aspnetcore%E5%85%A5%E9%97%A8/>阅读全文</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E5%9C%A8%E7%BA%BFide/>盘点一下免费在线ide</a>
 </h1><div class=post-meta>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
 </span>&nbsp;<span class=post-publish>发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>阿里云https://ide.aliyun.com/ 可以访问外网，不能访问github，需要加速 kvm方式虚拟化 没找到免费额度说明，默认无限</div><div class=post-footer>
 <a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E5%9C%A8%E7%BA%BFide/>阅读全文</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E7%99%BD%E5%AB%96/>白嫖</a>,&nbsp;<a href=/tags/cloud/>cloud</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E5%9C%A8%E7%BA%BF%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/>盘点一下免费在线深度学习平台</a>
-</h1><div class=post-meta>
-<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
-</span>&nbsp;<span class=post-publish>发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>colab需魔法上网，google账号 https://colab.research.google.com/ 没说每月能用多少小时，10几小时应该没问题 Kagglehttps://www.kaggle.com/ 每月30小时 恒源云新人100元 https://gpushare.com/ 九天 • 毕昇中国移动向高校</div><div class=post-footer>
-<a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E5%9C%A8%E7%BA%BF%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0/>阅读全文</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E7%99%BD%E5%AB%96/>白嫖</a>,&nbsp;<a href=/tags/cloud/>cloud</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E6%95%B0%E6%8D%AE%E5%BA%93/>盘点一下免费数据库</a>
-</h1><div class=post-meta>
-<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/lyj0309 title=Author target=_blank rel="noopener noreferrer author" class=author>lyj</a>
-</span>&nbsp;<span class=post-publish>发布于 <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>mysqlPlaneScaleMemFirepostgreSupabaseredisUpstashredislabsmongodb搜索引擎B</div><div class=post-footer>
-<a href=/posts/cloud/%E7%9B%98%E7%82%B9%E4%B8%80%E4%B8%8B%E5%85%8D%E8%B4%B9%E6%95%B0%E6%8D%AE%E5%BA%93/>阅读全文</a></div>
 </article><ul class=pagination><li class=page-item>
 <span class=page-link>
 <a href=/>1</a>
@@ -120,6 +141,10 @@
 </li><li class="page-item active">
 <span class=page-link>
 <a href=/page/16/>16</a>
+</span>
+</li><li class=page-item>
+<span class=page-link>
+<a href=/page/17/>17</a>
 </span>
 </li></ul></div></div>
 </main><footer class=footer>
