@@ -13,8 +13,8 @@ theme = "DoIt"
 
 ## 挂载图片
 [[module.mounts]]
-source = 'static'
-target = 'static'
+source = '.well-known'
+target = '.well-known'
 
 [[module.mounts]]
 source = 'static'
