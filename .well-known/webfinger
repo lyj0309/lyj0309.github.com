@@ -1,0 +1,9 @@
+{
+  "subject": "acct:lyj@fakev.cn",
+  "links": [
+    {
+      "rel": "http://openid.net/specs/connect/1.0/issuer",
+      "href": "https://fakev.auth.ap-southeast-1.amazoncognito.com/oauth2/idpresponse"
+    }
+  ]
+}
