@@ -14,7 +14,7 @@ theme = "DoIt"
 ## 挂载图片
 [[module.mounts]]
 source = '.well-known'
-target = '.well-known'
+target = 'static/.well-known'
 
 [[module.mounts]]
 source = 'static'
