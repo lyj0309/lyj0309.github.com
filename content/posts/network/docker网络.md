@@ -33,6 +33,8 @@ date: 2024-02-23T14:27:21+08:00
 
 `docker network create -d macvlan --subnet=192.168.10.0/24 --gateway=192.168.10.1 --ipv6 --subnet=fe80::2e2:69ff:fe5e:aed9/64 --gateway=fe80::3abc:1ff:fe5c:3e22 -o parent=vmbr0 mvl`
 
+docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 --ipv6 --subnet=2a10:cc40:231:a7:8000::/66 --gateway=2a10:cc40:231:a7:8000::1 -o parent=eth0 mvl
+
 docker network create -d macvlan \
 --subnet=192.168.10.0/24 \
 --gateway=192.168.10.1 \

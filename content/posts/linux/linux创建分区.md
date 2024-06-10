@@ -1,3 +1,7 @@
+---
+title: "Linux 创建分区"
+date: 2024-04-03T01:50:37+08:00
+---
 选择要分区的硬盘：parted /dev/sdb
 使用print 对磁盘信息进行查看：
 (parted) mklabel gpt
