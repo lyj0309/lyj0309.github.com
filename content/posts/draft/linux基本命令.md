@@ -252,7 +252,7 @@ sudo swapon /var/swapfile
 编辑   /etc/fstab，末行添加：
 
 ```sh
-cat << EOF > /etc/fstab
+cat << EOF >> /etc/fstab
 /var/swapfile   swap  swap  defaults  0  0
 EOF
 ```
