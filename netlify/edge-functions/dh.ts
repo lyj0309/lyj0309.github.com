@@ -10,8 +10,8 @@ const auth_url = 'https://auth.docker.io';
  * @returns {object} 解析后的信息
  */
 function parseHubPath(path) {
-	// 匹配 /hub/镜像名:标签 或 /hub/镜像名@digest
-	const hubMatch = path.match(/^\/hub\/([^:@]+)(?::([^/@]+)|@(.+))?$/);
+	// 匹配 /dh/镜像名:标签 或 /dh/镜像名@digest
+	const hubMatch = path.match(/^\/dh\/([^:@]+)(?::([^/@]+)|@(.+))?$/);
 	
 	if (hubMatch) {
 		let imageName = hubMatch[1];
