@@ -61,7 +61,9 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         run: |
           npx -y netlify-cli@26.1.0 deploy \
+            --auth "$NETLIFY_AUTH_TOKEN" \
             --site "$NETLIFY_SITE_ID" \
             --dir public \
+            --no-build \
             --prod \
             --message "GitHub Actions deploy for ${GITHUB_SHA}"
