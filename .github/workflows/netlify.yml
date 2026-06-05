@@ -1,0 +1,67 @@
+name: Netlify Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: netlify-production-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  HUGO_VERSION: "0.110.0"
+  NODE_VERSION: "20"
+  NETLIFY_SITE_ID: e331d6d1-5db4-4cd4-98fb-8b32d8fd6ae3
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Build site
+        run: hugo --minify
+
+      - name: Update Algolia index
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
+          ALGOLIA_INDEX_FILE: ./public/index.json
+        run: |
+          if [ -n "$ALGOLIA_APP_ID" ] && [ -n "$ALGOLIA_ADMIN_KEY" ] && [ -n "$ALGOLIA_INDEX_NAME" ]; then
+            npx -y atomic-algolia@0.3.19
+          else
+            echo "Algolia secrets are not set. Skipping index upload."
+          fi
+
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: |
+          npx -y netlify-cli@26.1.0 deploy \
+            --site "$NETLIFY_SITE_ID" \
+            --dir public \
+            --prod \
+            --message "GitHub Actions deploy for ${GITHUB_SHA}"
