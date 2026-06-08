@@ -1,3 +1,15 @@
 [build]
   publish = "public"
   edge_functions = "netlify/edge-functions"
+
+[[redirects]]
+  from = "/dk/v1"
+  to = "https://deepkey.top/v1"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/dk/v1/*"
+  to = "https://deepkey.top/v1/:splat"
+  status = 200
+  force = true
